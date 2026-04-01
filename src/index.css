@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "./assets/fonts/stylesheet.css";
+@import "tailwindcss";
+
+/* index.css or globals.css */
+@font-face {
+  font-family: "Saved By Zero";
+  src: url("/fonts/SavedByZero.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* ============================= */
+/*        THEME CONFIG          */
+/* ============================= */
+
+@theme {
+  /* -------- Colors -------- */
+  --color-primary: #6366f1;
+  --color-secondary: #f43f5e;
+
+  --color-bg1: #1e1e1e;
+  --color-bg2: #ffffff;
+  --color-bg3: #D9D9D9;
+  --color-bg4: #777777;
+  --color-bg5: #F7F7F7;
+  --color-bg6: #E36002;
+  --color-bg7: #323232;
+  --color-bg8: #000310;
+  --color-bg9: #375CA5;
+
+
+
+
+  --color-btn1: #072765;
+  --color-btn2: #E36002;
+  --color-btn3: #072765;
+
+
+  --color-iconbg1: #dcdcdc;
+  --color-iconbg2: #072765;
+
+  --color-text1: #ffffff;
+  --color-text13: #ffffffe1;
+  --color-text2: #A4A4A4;
+  --color-text3: #1e1e1e;
+  --color-text4: #072765;
+  --color-text5: #E36002;
+  --color-text6: #707070;
+  --color-text7: #D7D7D7;
+  --color-text8: #E36002;
+  --color-text9: #777777;
+  --color-text10: #3D3D3D;
+  --color-text11: #C2C2C2;
+  --color-text12: #999999;
+
+
+  /* ----Custom Screen Breakpoint----  */
+
+  --breakpoint-*: initial;
+  --breakpoint-xxxs: 365px;
+  --breakpoint-xxs: 440px;
+  --breakpoint-xs: 655px;
+  --breakpoint-sm: 900px;
+  --breakpoint-md: 1024px;
+  --breakpoint-mdlg: 1240px;
+  --breakpoint-lg: 1500px;
+  --breakpoint-xl: 1900px;
+
+  /* -------- Spacing -------- */
+  --spacing-section: 120px;
+  --spacing-container: 80px;
+  --spacing-card: 40px;
+
+  /* -------- Text Sizes -------- */
+  /* --text-txt1: 2.5rem;
+  --text-txt2: 1.5rem;
+  --text-txt3: 1.5rem; */
+
+  /* -------- Animation Easing -------- */
+  --ease-fluid: cubic-bezier(0.26, 0.07, 0.02, 0.98);
+}
+
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  /* font-family: "Saved By Zero"; */
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+}
+
+.app {
+  position: relative;
+  background: #000000;
+  /* border: none !important; */
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+::-webkit-scrollbar {
+  /* width: 10px; */
+  display: none;
+
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  /* background: #e0e0e0; */
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: #888; */
+  display: none;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* background: #555; */
+  display: none;
+
+}
+
+
+@keyframes cardSlideKF {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-55%);
+  }
+}
+
+.will-change-transform {
+  transform: translateZ(0);
+}

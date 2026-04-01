@@ -1,0 +1,43 @@
+
+h-[485px] md:h-[485px] lg:h-[700px] xl:h-[920px]
+
+w-[240px] md:w-[240px] lg:w-[280px] xl:w-[320px]
+
+
+text-[1.25rem] md:text-[1.25rem] lg:text-[1.8rem] xl:text-[2rem]
+max-xs:text-[0.5rem] text-[0.7rem] md:text-[0.7rem] lg:text-[0.95rem] xl:text-[1rem]
+
+• 
+
+
+max-xs:h-[100vh] h-[485px] md:h-[485px] lg:h-[780px] xl:h-[920px]
+
+max-xs:text-[0.7rem] text-[0.65rem] md:text-[0.65rem] lg:text-[0.85rem] xl:text-[1rem]"
+
+overflow-y-scroll overflow-x-clip overscroll-contain scroll-smooth
+
+
+import { Helmet } from "react-helmet-async";
+
+ <Helmet>
+                <title>My Page</title>
+                <meta name="description" content="This is my page" />
+                <link rel="canonical" href="https://www.tacobell.com/" />
+
+            </Helmet>
+
+
+
+            <div
+                    data-lenis-prevent-wheel
+                    className="relative w-full h-full flex flex-col justify-start items-center gap-[5%] overflow-y-auto overscroll-y-auto pt-[1%] pb-[4%] cursor-pointer z-1 border border-white"
+                >
+
+
+
+
+                <img
+  src="https://illustrations.popsy.co/gray/web-error.svg"
+  alt="404 illustration"
+  className="w-72 mb-6"
+/>
