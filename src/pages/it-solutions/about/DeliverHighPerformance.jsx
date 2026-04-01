@@ -58,7 +58,7 @@ const DeliverHighPerformance = () => {
                 >From industrial infrastructure to commercial developments, our approach combines engineering precision with execution excellence.</p>
             </div>
 
-            <div className="relative max-xs:w-[90%] w-[40%] bg-bg1 max-xxs:h-[55%] max-xs:h-[50%] h-full flex justify-center items-center rounded-t-[4rem] rounded-bl-[10%] overflow-hidden">
+            <div className="relative max-xs:w-[90%] w-[40%] bg-bg1 max-xxs:h-[55%] max-xs:h-[50%] h-full flex justify-center items-center max-xs:rounded-t-[4rem] xs:rounded-bl-[10%] overflow-hidden">
                 {/* <img
                     className="absolute z-3 max-xs:w-[50%] w-[50%]"
                     src={Logo}
@@ -68,9 +68,9 @@ const DeliverHighPerformance = () => {
                 {/* <div
                     className="absolute z-2 max-xs:w-[50%] w-[50%] aspect-5/2 rounded-full bg-bg2 blur-[70px]"
                 /> */}
-                {/* <div
-                    className="absolute z-1 bg-[rgba(0,0,0,0.2)] backdrop-blur-[2px] w-full h-full"
-                /> */}
+                <div
+                    className="absolute z-1 bg-[rgba(0,0,0,0.3)] w-full h-full xs:hidden"
+                />
                 <VideoComponent
                     src={VideoFile}
                     poster={DigitalSystem}

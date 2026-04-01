@@ -1,6 +1,7 @@
 
 import LogoIcon from "../assets/imgs/logo/Veltrixair-icon.png";
 import LogoText from "../assets/imgs/logo/bottom-text.png";
+import { useLenis } from "lenis/react";
 
 import {
     Img1,
@@ -28,6 +29,9 @@ const Loader = ({
     const [cardNum, setCardNum] = useState(0);
     const cardsRef = useRef([]);
     const [progress, setProgress] = useState(0);
+
+     const ref = useRef(null);
+    const lenis = useLenis();
 
     useEffect(() => {
         const handler = setInterval(() => {
@@ -136,8 +140,35 @@ const Loader = ({
     //     });
     // }, [cardNum]);
 
+    useEffect(() => {
+        if (!ref.current || !lenis) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    lenis.stop(); //stop scrolling
+                } else {
+                    lenis.start(); //resume scrolling
+                }
+            },
+            {
+                threshold: 0.6, // 60% visible
+            }
+        );
+
+        observer.observe(ref.current);
+
+        return () => {
+            observer.disconnect();
+            lenis.start(); // safety: always re-enable scroll
+        };
+    }, [lenis]);
+
     return (
-        <div className="relative max-xs:w-[50%] xs:w-[20%] aspect-square flex flex-col justify-center items-center">
+        <div
+            ref={ref}
+        
+         className="relative max-xs:w-[50%] xs:w-[20%] aspect-square flex flex-col justify-center items-center">
 
             <div
                 className="ml-[8%] w-[100%] h-[60%] relative overflow-hidden"
