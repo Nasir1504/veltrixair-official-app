@@ -134,7 +134,7 @@ function App() {
 
           <Link
             className="top-0 left-0 z-1 absolute w-[50%] h-full cursor-pointer"
-            to={"/it-infrastructure-solutions"}
+            to={"/"}
             onClick={() => setToggle(false)}
           />
           <img
@@ -193,26 +193,26 @@ function App() {
         <main key={location.pathname} className="app">
           <Routes>
 
-            <Route path="/">
+            {/* <Route path="/">
               <Route index element={<Home />} />
               <Route path="about" element={<AboutPage />} />
               <Route path="people" element={<PeoplePage />} />
-            </Route>
+            </Route> */}
 
             {/* ------------------------------------------- */}
 
-            <Route path="/construction-services-saudi-arabia">
+            {/* <Route path="/construction-services-saudi-arabia">
               <Route index element={<ConstructionPage />} />
               <Route path="fit-out-precision" element={<FitOutConstructionPage />} />
               <Route path="overhead-crane-installation" element={<OverheadCrameInstallationPage />} />
               <Route path="building-materials-supply" element={<BuildingMaterialsSupplyPage />} />
               <Route path="about" element={<AboutUsConstruction />} />
               <Route path="people" element={<PeopleConstruction />} />
-            </Route>
+            </Route> */}
 
             {/* ----------------------------- */}
 
-            <Route path="/it-infrastructure-solutions">
+            <Route path="/">
               <Route index element={<ITSolutionsMain />} />
               <Route path="about" element={<AboutPageITSolution />} />
               <Route path="people" element={<PeoplePageITSolution />} />

@@ -10,7 +10,7 @@ export const useScreen = () => {
       xs: 653,
       sm: 900,
       md: 1024,
-      mdlg: 1240,
+      mdlg: 1250,
       lg: 1500,
       xl: 1900,
     };

@@ -73,7 +73,7 @@ const NavBar = ({
                     />
                     <Link
                         className="top-0 left-0 z-1 absolute min-w-[260%] h-full cursor-pointer"
-                        to={"/it-infrastructure-solutions"}
+                        to={"/"}
                         onClick={() => setToggle(false)}
                     />
 
@@ -91,7 +91,7 @@ const NavBar = ({
                                 text-[0.85rem] md:text-[0.85rem] lg:text-[0.9rem] xl:text-[1rem]">
 
                     <NavLink
-                        to="/it-infrastructure-solutions"
+                        to="/"
                         end
                         className={({ isActive }) =>
                             `shrink-0 text-text1 hover:underline ${isActive ? "underline" : ""}`
@@ -113,7 +113,7 @@ const NavBar = ({
                     </button>
 
                     <NavLink
-                        to="./it-infrastructure-solutions/about"
+                        to="./about"
                         className={({ isActive }) =>
                             `shrink-0 text-text1 hover:underline ${isActive ? "underline" : ""}`
                         }
@@ -123,7 +123,7 @@ const NavBar = ({
                     </NavLink>
 
                     <NavLink
-                        to="./it-infrastructure-solutions/people"
+                        to="./people"
                         className={({ isActive }) =>
                             `shrink-0 text-text1 hover:underline ${isActive ? "underline" : ""}`
                         }
@@ -181,7 +181,7 @@ const NavBar = ({
                             INFRASTRUCTURE_CARD_ITSOLUTIONS.map((item, i) => {
                                 return <NavLink
                                     key={i}
-                                    to="#"
+                                    to=""
                                     onClick={() => setToggle(false)}
                                     className={({ isActive }) =>
                                         `text-[0.7rem] md:text-[0.7rem] lg:text-[0.75rem] xl:text-[0.8rem] hover:underline text-left w-full text-text1 ${isActive ? "" : "underline"}`
@@ -404,7 +404,7 @@ const NavBarMobile = ({
             >&#x2715;</button>
 
             <NavLink
-                to="/it-infrastructure-solutions"
+                to="/"
                 end
                 className={({ isActive }) =>
                     `shrink-0 text-text1 hover:underline ${isActive ? "underline" : ""}`
@@ -574,7 +574,7 @@ const NavBarMobile = ({
                                     INFRASTRUCTURE_CARD_ITSOLUTIONS.map((item, i) => {
                                         return <NavLink
                                             key={i}
-                                            to="#"
+                                            to=""
                                             // onClick={() => SetToggle(false)}
                                             onClick={() => {
                                                 SetToggle(false)
@@ -608,7 +608,7 @@ const NavBarMobile = ({
 
             {/* ------------------------------ */}
             <NavLink
-                to="./it-infrastructure-solutions/about"
+                to="./about"
                 className={({ isActive }) =>
                     `shrink-0 text-text1 hover:underline ${isActive ? "underline" : ""}`
                 }
@@ -618,7 +618,7 @@ const NavBarMobile = ({
             </NavLink>
 
             <NavLink
-                to="./it-infrastructure-solutions/people"
+                to="./people"
                 className={({ isActive }) =>
                     `shrink-0 text-text1 hover:underline ${isActive ? "underline" : ""}`
                 }

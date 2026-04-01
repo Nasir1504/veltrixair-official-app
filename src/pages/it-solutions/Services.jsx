@@ -218,6 +218,20 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
 // ------CLAMP FUNCTION ---------------------------
 const clamp = (min, max, val) => Math.max(min, Math.min(max, val));
 
+
+const MobileShowCase = [
+    { imgURL: Frame1 },
+    { imgURL: Frame2 },
+    { imgURL: Frame3 },
+    { imgURL: Frame4 },
+
+    { imgURL: Frame1 },
+    { imgURL: Frame2 },
+    { imgURL: Frame6 },
+    { imgURL: Frame5 },
+
+]
+
 // -------- Section One ----------
 
 
@@ -265,8 +279,8 @@ const Services = () => {
         }
         else if (screen === "mdlg") {
             setSize({
-                scrollVal: 262,
-                scrollFactor: 360
+                scrollVal: 238,
+                scrollFactor: 320
             })
 
         }
@@ -576,7 +590,7 @@ const Services = () => {
                                 }}
                             >
                                 {
-                                    [...Array(8)].map((_, i) => {
+                                    MobileShowCase.map((item, i) => {
                                         return <div
                                             key={i}
                                             className="absolute w-[30%] aspect-5/7 rounded-md overflow-hidden flex justify-center"
@@ -598,7 +612,7 @@ const Services = () => {
                                                 style={{
                                                     objectFit: "cover"
                                                 }}
-                                                src={IndustrialFitOuts}
+                                                src={item.imgURL}
                                                 alt=""
                                                 loading="lazy"
                                             />

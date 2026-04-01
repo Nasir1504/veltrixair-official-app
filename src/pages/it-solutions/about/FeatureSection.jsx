@@ -55,7 +55,7 @@ const FeatureSection = () => {
 
                 >
                     <div className='w-full h-full flex flex-col'>
-                        <section className='relative max-xs:h-[100vh] h-[500px] md:h-[450px] mdlg:h-[500px] lg:h-[600px] xl:h-[820px] flex flex-col max-xs:gap-[4%] gap-[2.5%] justify-center items-center '>
+                        <section className='relative max-xs:h-[80vh] h-[500px] md:h-[450px] mdlg:h-[500px] lg:h-[600px] xl:h-[820px] flex flex-col max-xs:gap-[4%] gap-[2.5%] justify-center items-center '>
                             <img
                                 className='w-[200px] max-xs:w-[28%]'
                                 src={VeltrixairIcon}
@@ -131,7 +131,7 @@ const FeatureSection = () => {
                                 </p>
                             </div>
                             <div className='relative max-xs:w-full w-[40%] h-full flex justify-center items-center xs:hidden'>
-                                <div className='w-[55%] h-[60%] max-xs:w-[94%] max-xs:h-full'>
+                                <div className='w-[75%] h-[70%] max-xs:w-[94%] max-xs:h-full'>
                                     {/* <VideoComponent
                                         src={VideoFile}
                                         poster={DigitalSystem}
@@ -149,7 +149,7 @@ const FeatureSection = () => {
                         </section>
 
                         {/* -------------------------------------------------- */}
-                        <section className='relative max-xs:h-[100vh] h-[500px] md:h-[350px] mdlg:h-[500px] lg:h-[600px] xl:h-[820px] flex flex-col gap-[2%] justify-center items-center'>
+                        <section className='relative max-xs:h-[80vh] h-[500px] md:h-[350px] mdlg:h-[500px] lg:h-[600px] xl:h-[820px] flex flex-col gap-[2%] justify-center items-center '>
 
                             <div className='relative w-full flex flex-col justify-center items-center overflow-hidden '>
                                 <h3 className='text-text1 max-xs:w-[80%] text-center max-xxs:text-[1.8rem] max-xs:text-[1.6rem] text-[1.25rem] md:text-[2.1rem] mdlg:text-[2.6rem] lg:text-[3.1rem] xl:text-[3.8rem]

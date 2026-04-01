@@ -3,7 +3,6 @@ import { ItServicesIcon, ItServicesIcon2 } from "../assets/imgs/home";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import VideoComponent from "./VideoComponent";
-import videoFile from "../assets/videos/nature-background-videos.mp4"
 
 const InfrastructureCard = ({
   Id,
@@ -25,7 +24,7 @@ const InfrastructureCard = ({
   return (
     <div
       className="infrastructure-card-main relative shrink-0 
-      max-xs:h-[360px] max-xs:w-[240px] w-[210px] h-[290px] md:w-[210px] md:h-[305px] mdlg:w-[280px] mdlg:h-[400px] lg:w-[320px] lg:h-[450px] xl:w-[360px] xl:h-[520px] 
+      max-xs:h-[360px] max-xs:w-[240px] w-[210px] h-[290px] md:w-[210px] md:h-[305px] mdlg:w-[260px] mdlg:h-[360px] lg:w-[320px] lg:h-[450px] xl:w-[360px] xl:h-[520px] 
       rounded-xl flex overflow-hidden p-[1px] select-none cursor-default
       bg-[linear-gradient(-220deg,_rgba(7,39,101,1)_0%,_rgba(138,143,152,1)_100%)]"
     >
