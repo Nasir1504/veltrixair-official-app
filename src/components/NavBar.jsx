@@ -330,16 +330,16 @@ const NavBarMobile = ({
     //     })
     // }, [Direction])
 
-    useEffect(() => {
-        if (location.pathname.startsWith("/construction-services-saudi-arabia")) {
-            setSubNavItem(1);
-        } else if (location.pathname.startsWith("/it-infrastructure-solutions")) {
-            setSubNavItem(2);
-        } else {
-            setSubNavItem(0);
-        }
-        setNavLinks(parent);
-    }, [location.pathname]);
+    // useEffect(() => {
+    //     if (location.pathname.startsWith("/construction-services-saudi-arabia")) {
+    //         setSubNavItem(1);
+    //     } else if (location.pathname.startsWith("/it-infrastructure-solutions")) {
+    //         setSubNavItem(2);
+    //     } else {
+    //         setSubNavItem(0);
+    //     }
+    //     setNavLinks(parent);
+    // }, [location.pathname]);
 
 
 
