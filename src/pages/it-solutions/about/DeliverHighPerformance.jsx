@@ -1,8 +1,10 @@
 
-import Logo from "../../../assets/imgs/home/Veltrixair-icon.png";
+// import Logo from "../../../assets/imgs/home/Veltrixair-icon.png";
 import { VideoComponent } from "../../../components";
 import { DigitalSystem } from "../../../assets/imgs/home";
 
+
+import { ITmobilevideo } from "../../../assets/imgs/it-solutions";
 const VideoFile = "https://web1.veltrixair.com/videos/IT/IT-home-page-video.mp4";
 
 
@@ -71,12 +73,17 @@ const DeliverHighPerformance = () => {
                 <div
                     className="absolute z-1 bg-[rgba(0,0,0,0.3)] w-full h-full xs:hidden"
                 />
+               
                 <VideoComponent
                     src={VideoFile}
                     poster={DigitalSystem}
-                    className="h-full w-full relative z-0"
-                    isMuteIcon={false}
+                    className="h-full w-full relative z-0 max-xs:hidden"
+                />
 
+                <VideoComponent
+                    src={ITmobilevideo}
+                    poster={DigitalSystem}
+                    className="h-full w-full relative z-0 xs:hidden"
                 />
             </div>
 

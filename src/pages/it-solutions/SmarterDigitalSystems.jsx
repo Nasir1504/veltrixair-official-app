@@ -4,8 +4,11 @@ import { VideoComponent } from "../../components";
 //poster
 import { DigitalSystem } from "../../assets/imgs/home";
 
+
 //video file
+import { ITmobilevideo } from "../../assets/imgs/it-solutions";
 const VideoFile = "https://web1.veltrixair.com/videos/IT/IT-home-page-video.mp4";
+
 
 // --------------
 
@@ -17,10 +20,16 @@ const SmarterDigitalSystems = () => {
             <VideoComponent
                 src={VideoFile}
                 poster={DigitalSystem}
-                className="h-full"
+                className="h-full max-xs:hidden"
             />
 
-            <div className="absolute flex flex-col gap-[1.2rem] md:gap-[1.2rem] lg:gap-[1.8rem] xl:gap-[2rem] pl-[5%] top-[35%] max-xs:top-[40%]">
+            <VideoComponent
+                src={ITmobilevideo}
+                poster={DigitalSystem}
+                className="h-full xs:hidden"
+            />
+
+            <div className="absolute flex flex-col gap-[1.2rem] md:gap-[1.2rem] lg:gap-[1.8rem] xl:gap-[2rem] pl-[5%] top-[35%] max-xs:top-[50%]">
                 <div
                     className="absolute w-[60%] rounded-full h-[120%] bg-[#000000] blur-[50px] opacity-50"
                 />
