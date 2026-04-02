@@ -41,6 +41,7 @@ import ItSolutions6 from "./it-solutions6.mp4";
 import ItSolutions7 from "./it-solutions7.mov";
 import ItSolutions8 from "./it-solutions8.mov";
 import Collaborative from "./collaborative.mov";
+import ITmobilevideo from "./ITmobilevideo.mp4";
 
 import AboutCard1 from "./about-card1.png";
 import AboutCard2 from "./about-card2.png";
@@ -87,6 +88,7 @@ export {
     NetworkSystems,
     SmartSiteSecurity,
     DataStrategy,
+    ITmobilevideo,
 
     AboutCard1,
     AboutCard2,
