@@ -8,7 +8,7 @@ import ScrollTracker from "./components/ScrollTracker";
 import { NavBar, NavBarMobile } from "./components";
 import { useLocation } from "react-router-dom";
 import usePageTracking from "./hooks/usePageTracking";
-
+import { Helmet } from "react-helmet-async";
 gsap.registerPlugin(ScrollTrigger);
 
 // pages
@@ -55,10 +55,15 @@ function App() {
   usePageTracking();
 
   const location = useLocation();
+  const baseUrl = "https://veltrixair.com";
+  const canonicalUrl = baseUrl + location.pathname;
+
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
+
+
 
     const reset = () => {
       window.scrollTo(0, 0);
@@ -93,6 +98,9 @@ function App() {
 
   return (
     <HelmetProvider>
+      <Helmet>
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
       <ReactLenis
         root
         autoRaf={true}
@@ -108,7 +116,7 @@ function App() {
       >
         {/* Reset scroll & kill stale GSAP on every route change */}
         {/* <ScrollReset /> */}
-
+        {/* <p className="top-0 fixed z-40 text-2xl left-[50%]">{location.pathname}</p> */}
         <ScrollTracker
           setVelocity={setVelocity}
           setDirection={setDirection}

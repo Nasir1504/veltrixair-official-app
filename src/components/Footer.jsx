@@ -178,7 +178,7 @@ const Footer = () => {
                         </div>
 
                     </div>
-                    <div className="w-full max-xs:h-[35%] h-[25%] sm:h-[25%] flex max-xs:flex-col max-xs:gap-[10%] max-xs:text-[2vw] text-[0.54rem] md:text-[0.54rem] mdlg:text-[0.66rem] lg:text-[0.76rem] xl:text-[0.95rem]">
+                    <div className="w-full max-xs:h-[35%] h-[25%] sm:h-[25%] flex max-xs:flex-col max-xs:gap-[10%] max-xs:text-[1.6vw] text-[0.54rem] md:text-[0.54rem] mdlg:text-[0.66rem] lg:text-[0.76rem] xl:text-[0.95rem]">
                         <div className="max-xs:w-[65%] w-[50%] sm:w-[50%]">
                             <h3
                                 className="uppercase text-text1 flex items-center max-xs:gap-1 max-xs:mb-2 gap-1 mb-1 md:gap-1 md:mb-1 lg:gap-2 lg:mb-2"
@@ -191,15 +191,15 @@ const Footer = () => {
                             </h3>
                             <p className="uppercase text-text1 flex gap-1">
                                 <span>📞</span>
-                                <span>Corporate office</span>: <span>[Your Address]</span>
+                                <span>Address</span>: <span>12056, Prestige Royale Gardens, Yelahanka, Bangalore North, Karnataka, India - 560064</span>
                             </p>
                             <p className="uppercase text-text1 flex gap-1">
                                 <span>📞</span>
-                                <span>Phone</span>: <span>+91-XXXX-XXXX-XX</span>
+                                <span>Phone</span>: <span>+91 995 587 7577</span>
                             </p>
                             <p className="uppercase text-text1 flex gap-1">
                                 <span>📞</span>
-                                <span>Email</span>: <span>info@yourcampany.com</span>
+                                <span>Email</span>: <span>info@veltrixair.com</span>
                             </p>
                         </div>
                         <div className="flex justify-center items-center max-xs:w-[65%] w-[50%] sm:w-[50%] h-full">
@@ -207,6 +207,7 @@ const Footer = () => {
                                 © 2026 [Company Name]. All Rights Reserved. <br /> Privacy Policy | Terms & Conditions | Cookies Policy
                             </p>
                         </div>
+
                     </div>
 
                 </div>
