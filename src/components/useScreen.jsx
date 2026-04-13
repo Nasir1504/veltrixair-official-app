@@ -24,7 +24,8 @@ export const useScreen = () => {
       else if (width >= breakpoints.md) setScreen("md");
       else if (width >= breakpoints.sm) setScreen("sm");
       else if (width >= breakpoints.xs) setScreen("xs");
-      else setScreen("xxs");
+      else if (width >= breakpoints.xxs) setScreen("xxs");
+      else setScreen("xxxs");
     };
 
     update();
