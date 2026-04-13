@@ -33,7 +33,8 @@ const ShutterContent = ({
                 }}
             >
                 <h3 className='
-                                max-xxs:text-[1.6rem] max-xs:text-[2.2rem] text-[2.5rem] md:text-[2.5rem] mdlg:text-[3rem] lg:text-[3.4rem] xl:text-[3.8rem] tracking-tight xl:leading-[4.2rem] lg:leading-[4rem] mdlg:leading-[3.4rem] md:leading-[3rem] leading-[3rem] max-xs:leading-[3.5rem]
+                                max-xxs:text-[1.6rem] max-xs:text-[2.2rem] text-[2.5rem] md:text-[2.5rem] mdlg:text-[3rem] lg:text-[3.4rem] xl:text-[3.8rem] tracking-tight 
+                                xl:leading-[4.2rem] lg:leading-[4rem] mdlg:leading-[3.4rem] md:leading-[3rem] leading-[3rem] max-xs:leading-[3.5rem]
                 '>
                     <span className="font-[Poppins] font-medium">{Heading1}</span><br />
                     <span

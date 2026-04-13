@@ -554,7 +554,7 @@ const NavBarMobile = ({
 
                         {
                             subNavItem === 2 &&
-                            <div className="flex flex-col w-full h-[90vh] gap-[1rem] px-[5%] py-[4%] overflow-y-scroll">
+                            <div className="flex flex-col w-full h-[90vh] max-xxs:gap-[0.8rem] gap-[1rem] px-[5%] py-[4%] overflow-y-scroll">
                                 {/* <NavLink
                                     to="/it-infrastructure-solutions"
                                     end
@@ -584,7 +584,7 @@ const NavBarMobile = ({
                                             }}
 
                                             className={({ isActive }) =>
-                                                `max-xxxs:text-[0.865rem] max-xxs:text-[0.8rem] text-[1rem] hover:underline text-text1 ${isActive ? "underline" : ""}`
+                                                `max-xxxs:text-[0.7rem] max-xxs:text-[0.75rem] text-[1rem] hover:underline text-text1 ${isActive ? "underline" : ""}`
                                             }
                                         >
                                             {item.serviceName}
