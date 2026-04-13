@@ -74,8 +74,8 @@ const StackOfCards = ({
                        max-xxs:text-[1.4rem] max-xs:text-[1.8rem] max-xs:font-medium text-[1.8rem] md:text-[1.7rem] mdlg:text-[2rem] lg:text-[2.4rem] xl:text-[2.8rem]">
           {heading}</h2>
         <p
-          className="text-text1 max-xs:w-[80%] w-[42%] text-center
-                    md:text-[0.7rem] mdlg:text-[0.85rem] lg:text-[1.2rem] max-xxs:text-[0.6rem]"
+          className="text-text1 max-xs:w-[90%] w-[42%] text-center
+                    md:text-[0.7rem] mdlg:text-[0.85rem] lg:text-[1.2rem] max-xxs:text-[0.85rem]"
         >
           {subHeading}
         </p>
