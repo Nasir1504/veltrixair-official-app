@@ -12,6 +12,7 @@ import PDFBtn from "../assets/imgs/navbar/pdf-btn.png";
 
 
 import { INFRASTRUCTURE_CARD_ITSOLUTIONS } from "../pages/it-solutions/Services";
+import { SERVICES_DATA } from "../pages/it-solutions/services/ServicesData";
 
 const NavBar = ({
     Direction,
@@ -176,18 +177,18 @@ const NavBar = ({
                 <div className="flex flex-col justify-center items-start w-[70%] h-full gap-[6%]
                 text-[0.7rem] md:text-[0.8rem] lg:text-[1.1rem] xl:text-[1.2rem] py-[2%]
                 ">
-                    <div className="w-full h-full grid grid-cols-3 justify-start items-center gap-[5%] gap-y-[0]">
+                    <div className="w-full h-full grid grid-cols-4 justify-start items-center gap-[5%] gap-y-[0]">
                         {
-                            INFRASTRUCTURE_CARD_ITSOLUTIONS.map((item, i) => {
+                            SERVICES_DATA.map((item, i) => {
                                 return <NavLink
                                     key={i}
-                                    to=""
+                                    to={item.siteURL}
                                     onClick={() => setToggle(false)}
                                     className={({ isActive }) =>
-                                        `text-[0.7rem] md:text-[0.7rem] lg:text-[0.75rem] xl:text-[0.8rem] hover:underline text-left w-full text-text1 ${isActive ? "" : "underline"}`
+                                        `text-[0.7rem] md:text-[0.7rem] lg:text-[0.75rem] xl:text-[0.8rem] hover:underline text-left w-full text-text1 ${isActive ? "underline" : ""}`
                                     }
                                 >
-                                    {item.subHeading}
+                                    {item.serviceName}
                                 </NavLink>
                             })
                         }
@@ -442,7 +443,7 @@ const NavBarMobile = ({
             {/* ---------------------------------------------------------------- */}
 
 
-            <div className={`absolute flex flex-col justify-start items-start top-0 left-0 w-full h-screen pt-[25%] pl-[5%] gap-[2%] duration-150 ease-fluid bg-bg1 z-2
+            <div className={`absolute flex flex-col justify-start items-start top-0 left-0 w-full h-screen pt-[15%] pl-[5%] gap-[2%] duration-150 ease-fluid bg-bg1 z-2
                             ${Toggle.sub ? "translate-x-[0%]" : "translate-x-[100%]"}`}
             >
                 {/* BACK BUTTON */}
@@ -548,7 +549,7 @@ const NavBarMobile = ({
 
                         />
                     </button> */}
-                    <div className="flex flex-col text-[1rem] mt-[1rem]">
+                    <div className="flex flex-col text-[1rem] mt-[0rem]">
 
                         {
                             subNavItem === 2 &&
@@ -571,10 +572,10 @@ const NavBarMobile = ({
                                     It Infrastructure
                                 </NavLink> */}
                                 {subNavItem === 2 &&
-                                    INFRASTRUCTURE_CARD_ITSOLUTIONS.map((item, i) => {
+                                    SERVICES_DATA.map((item, i) => {
                                         return <NavLink
                                             key={i}
-                                            to=""
+                                            to={item.siteURL}
                                             // onClick={() => SetToggle(false)}
                                             onClick={() => {
                                                 SetToggle(false)
@@ -582,10 +583,10 @@ const NavBarMobile = ({
                                             }}
 
                                             className={({ isActive }) =>
-                                                `text-[1rem] hover:underline text-text1 ${isActive ? "" : "underline"}`
+                                                `max-xxs:text-[0.8rem] text-[1rem] hover:underline text-text1 ${isActive ? "underline" : ""}`
                                             }
                                         >
-                                            {item.subHeading}
+                                            {item.serviceName}
 
                                         </NavLink>
                                     })

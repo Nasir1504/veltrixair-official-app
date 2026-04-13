@@ -50,6 +50,7 @@ import AboutCard4 from "./about-card4.png";
 import AboutCard5 from "./about-card5.png";
 import AboutCard6 from "./about-card6.png";
 
+import Shutter from "./shutter.png";
 
 
 
@@ -110,4 +111,6 @@ export {
 
     Collaborative,
     VisionVideo,
+
+    Shutter,
 }

@@ -21,3 +21,5 @@ export { default as ScrollMotionCarousel } from "./ScrollMotionCarousel";
 export { default as BlockScrollSection } from "./BlockScrollSection";
 export { default as NotFound } from "./NotFound";
 export { default as CookieConsent } from "./CookieConsent";
+export { default as FloatingBlob } from "./FloatingBlob";
+export { default as StackOfCards } from "./StackOfCards";

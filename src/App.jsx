@@ -29,6 +29,8 @@ import {
 import ITSolutionsMain from "./pages/it-solutions/ITSolutionsMain"
 import AboutPageITSolution from "./pages/it-solutions/about/AboutPage";
 import PeoplePageITSolution from "./pages/it-solutions/people-page";
+import Services from "./pages/it-solutions/services/Services";
+import { SERVICES_DATA } from "./pages/it-solutions/services/ServicesData";
 
 import {
   Loader,
@@ -177,7 +179,7 @@ function App() {
           </div>
         </div>
         {/* ------------------ */}
-
+        {/* LOADER */}
         <div
           className={`fixed w-full h-[100vh] z-25 top-0 left-0 bg-bg1 flex justify-center items-center
            text-white  `}
@@ -224,6 +226,19 @@ function App() {
               <Route index element={<ITSolutionsMain />} />
               <Route path="about" element={<AboutPageITSolution />} />
               <Route path="people" element={<PeoplePageITSolution />} />
+              <Route path="services" element={<Services />} />
+              {
+                SERVICES_DATA.map((item, i) => {
+                  return (
+                    <Route
+                      key={i}
+                      path={item.siteURL}
+                      element={<Services Item={item} />}
+                    />
+                  )
+                })
+              }
+
             </Route>
 
             <Route path="*" element={<NotFound />} />

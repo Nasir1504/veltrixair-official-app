@@ -41,3 +41,7 @@ import { Helmet } from "react-helmet-async";
   alt="404 illustration"
   className="w-72 mb-6"
 />
+
+
+
+  clipPath: "rect(5px 100% 100% 5px round 20%)"

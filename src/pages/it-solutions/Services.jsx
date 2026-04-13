@@ -308,7 +308,7 @@ const Services = () => {
         else if (screen === "xxxs") {
             setSize({
                 scrollVal: 930,
-                scrollFactor: 1600
+                scrollFactor: 1100
             })
 
         }
