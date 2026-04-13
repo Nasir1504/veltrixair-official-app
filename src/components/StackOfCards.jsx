@@ -93,7 +93,7 @@ const StackOfCards = ({
               className="absolute max-xxs:mt-[23%] max-xs:mt-[17%] mt-[6%] mdlg:mt-[6%] lg:mt-[8%] xl:mt-[7%] top-0 left-0 w-full h-full flex items-center justify-center will-change-transform"
               style={{ zIndex: subService.length - i }}
             >
-              <div className="relative w-[60%] h-[45%] max-xs:h-[75%] max-xs:w-[70%] max-xxs:w-[85%]
+              <div className="relative w-[60%] h-[45%]  max-xxs:h-[65%] max-xs:h-[75%] max-xs:w-[70%] max-xxs:w-[85%]
                               bg-[linear-gradient(90deg,rgba(55,92,165,1)_0%,rgba(0,0,0,0)_100%)] flex items-center justify-center text-3xl font-bold shadow-2xl p-0.5 
                               rounded-[1.2rem] md:rounded-[1.2rem] mdlg:rounded-[1.5rem] lg:rounded-[1.8rem] xl:rounded-[2rem]">
                 <p className="absolute text-text1 right-8 top-5 font-light
@@ -163,7 +163,7 @@ const StackOfCards = ({
                     </h2>
                     {/* ------------------------------- */}
 
-
+                    {/* --------- Cards Inner Contents Mobile ---------------------- */}
                     <div className="w-full h-full flex max-xs:gap-[2%] gap-[1%] pl-[4%] max-xs:items-center">
 
                       <div className="max-xxs:w-[5%] max-xs:w-[4%] w-[2.2%] xl:w-[2%] h-auto max-xs:h-[90%] flex flex-col gap-[10%] py-[2%] justify-center items-center rounded-2xl border border-[#ffffff50]">

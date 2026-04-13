@@ -3,6 +3,7 @@ import { useLenis } from "lenis/react";
 
 import { INFRASTRUCTURE_CARD_CONSTRUCTION } from "../pages/construction-page/Services";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import BlockScrollSection from "./BlockScrollSection";
 
 //imgs
 import { VeltrixairIcon } from "../assets/imgs/home";
@@ -553,7 +554,7 @@ const NavBarMobile = ({
 
                         {
                             subNavItem === 2 &&
-                            <div className="flex flex-col w-full gap-[1rem] px-[5%] py-[4%]">
+                            <div className="flex flex-col w-full h-[90vh] gap-[1rem] px-[5%] py-[4%] overflow-y-scroll">
                                 {/* <NavLink
                                     to="/it-infrastructure-solutions"
                                     end
@@ -583,7 +584,7 @@ const NavBarMobile = ({
                                             }}
 
                                             className={({ isActive }) =>
-                                                `max-xxs:text-[0.8rem] text-[1rem] hover:underline text-text1 ${isActive ? "underline" : ""}`
+                                                `max-xxxs:text-[0.865rem] max-xxs:text-[0.8rem] text-[1rem] hover:underline text-text1 ${isActive ? "underline" : ""}`
                                             }
                                         >
                                             {item.serviceName}

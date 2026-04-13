@@ -35,7 +35,6 @@ const WhyChoose = () => {
     return (
         <div>
 
-
             <section className='relative max-xs:h-[100vh] h-[500px] md:h-[550px] mdlg:h-[650px] lg:h-[740px] xl:h-[920px] flex flex-col justify-center items-center max-xs:gap-[2%] gap-[4%]'>
                 {/* <img
                     className='max-xxs:w-[110px] max-xs:w-[140px] w-[120px] md:w-[120px] lg:w-[160px] xl:w-[200px]'
@@ -63,7 +62,7 @@ const WhyChoose = () => {
                     Businesses rely on Veltrixair for secure infrastructure, scalable systems, disciplined execution and long-term IT performance through critical environments
                 </p>
                 <div className='
-                                 w-full max-xxxs:h-[65%] max-xxs:h-[65%] max-xs:h-[60%] h-[38%] md:h-[38%] mdlg:h-[39%] lg:h-[40%] max-xs:gap-[4%] gap-[2%] overflow-scroll flex justify-center 
+                                 w-full max-xxxs:h-[65%] max-xxs:h-[60%] max-xs:h-[60%] h-[38%] md:h-[38%] mdlg:h-[39%] lg:h-[40%] max-xxs:gap-y-[0%] max-xs:gap-[4%] gap-[2%] overflow-scroll flex justify-center 
                                 items-center flex-wrap'>
                     {/* grid grid-flow-col justify-start items-start */}
                     {OUR_CULTURE_BUILD_ON_DATA.map((item, i) => {
@@ -71,7 +70,7 @@ const WhyChoose = () => {
                             <div
                                 key={i}
                                 className="shrink-0 max-xxxs:w-[150px] max-xxs:w-[160px] max-xs:w-[210px] w-[180px] md:w-[180px] mdlg:w-[210px] lg:w-[245px] xl:w-[290px] 
-                                                    max-xxs:h-[40%] max-xs:h-[45%] h-[100%] rounded-[0.6em] md:rounded-[0.6em] lg:rounded-[0.9em] xl:rounded-[1.2em] p-0.5 flex justify-center items-center flex-wrap
+                                                    max-xxs:h-[45%] max-xs:h-[45%] h-[100%] rounded-[0.6em] md:rounded-[0.6em] lg:rounded-[0.9em] xl:rounded-[1.2em] p-0.5 flex justify-center items-center flex-wrap
                                         bg-[linear-gradient(90deg,rgba(185,181,181,1)_0%,rgba(44,44,44,1)_100%)]"
                             >
                                 <div
