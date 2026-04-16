@@ -85,7 +85,7 @@ const InfrastructureCard = ({
             <p>{Heading}</p>
           </div>
           {SubContent.length > 0 ?
-            <div className="flex flex-col gap-[10%] flex-[1.8] justify-center Roboto_Mono">
+            <div className="flex flex-col gap-[10%] flex-[1.8] justify-center font-[Roboto_Mono]">
               <p className={`${Id === cardNum && HoverEffect ? "text-btn1" : "text-text1"} opacity-80 flex justify-start items-center
                            max-xs:text-[0.52rem] text-[0.45rem] md:text-[0.45rem] mdlg:text-[0.6rem] lg:text-[0.7rem] xl:text-[0.8rem]
                            max-xs:pl-1 pl-1 md:pl-1 lg:pl-2 md:pr-1 pr-1 lg:pr-2 leading-[1.2em]
@@ -104,7 +104,7 @@ const InfrastructureCard = ({
             : <div className="flex flex-[1.8]">
               <p className={`${Id === cardNum && HoverEffect ? "text-btn1" : "text-text1"} opacity-80 flex justify-start items-center
                            max-xs:text-[0.52rem] text-[0.45rem] md:text-[0.45rem] mdlg:text-[0.6rem lg:text-[0.7rem] xl:text-[0.8rem]
-                           max-xs:pl-1 pl-1 md:pl-1 lg:pl-2 md:pr-1 pr-1 lg:pr-2 leading-[1.2em]
+                           max-xs:pl-1 pl-1 md:pl-1 lg:pl-2 md:pr-1 pr-1 lg:pr-2 leading-[1.2em] font-[Roboto_Mono]
                          `}
               >
                 {Concent}

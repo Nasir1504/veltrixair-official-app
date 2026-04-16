@@ -73,13 +73,13 @@ const StackOfCards = ({
 
   return (
     <div ref={containerRef} className="relative w-full">
-      <div className="absolute  z-1 w-full h-[46%] max-xs:h-[30%] flex flex-col justify-center items-center">
+      <div className="absolute  z-1 w-full h-[46%] max-xs:h-[32%] flex flex-col justify-center items-center">
         <h2 className="text-text1 font-[poppins] font-semibold max-xs:leading-[4rem]
                        max-xxs:text-[1.4rem] max-xs:text-[1.8rem] max-xs:font-medium text-[1.8rem] md:text-[1.7rem] mdlg:text-[2rem] lg:text-[2.4rem] xl:text-[2.8rem]">
           {heading}</h2>
         <p
-          className="text-text1 max-xs:w-[90%] w-[42%] text-center font-[Roboto_Mono] text-text12 font-semibold
-                    text-[0.7rem] md:text-[0.7rem] mdlg:text-[0.85rem] lg:text-[1.2rem] max-xxs:text-[0.85rem] max-xs:text-[0.9rem]"
+          className="text-text1 max-xs:w-[75%] max-xs:w-[65%] w-[42%] text-center font-[Roboto_Mono] text-text12 font-semibold
+                    text-[0.7rem] md:text-[0.7rem] mdlg:text-[0.85rem] lg:text-[1.2rem] max-xxs:text-[0.68rem] max-xs:text-[0.9rem]"
         >
           {subHeading}
         </p>
@@ -97,7 +97,7 @@ const StackOfCards = ({
               className="absolute max-xxs:mt-[23%] max-xs:mt-[17%] mt-[6%] mdlg:mt-[6%] lg:mt-[8%] xl:mt-[7%] top-0 left-0 w-full h-full flex items-center justify-center will-change-transform"
               style={{ zIndex: subService.length - i }}
             >
-              <div className="relative w-[60%] h-[45%]  max-xxs:h-[65%] max-xs:h-[65%] max-xs:w-[60%] max-xxs:w-[85%]
+              <div className="relative w-[60%] h-[45%] max-xxs:h-[60%] max-xs:h-[60%] max-xs:w-[60%] max-xxs:w-[75%]
                               bg-[linear-gradient(90deg,rgba(55,92,165,1)_0%,rgba(0,0,0,0)_100%)] flex items-center justify-center text-3xl font-bold shadow-2xl p-0.5 
                               rounded-[1.2rem] md:rounded-[1.2rem] mdlg:rounded-[1.5rem] lg:rounded-[1.8rem] xl:rounded-[2rem]">
                 <p className="absolute text-text1 right-8 top-5 font-light
@@ -163,7 +163,7 @@ const StackOfCards = ({
                     </div>
                     <div className="w-[65%] h-full flex shrink-0 pl-[5%] justify-start items-center">
                       <h2 className="text-text1 capitalize
-                                  text-[1.2rem] max-xs:text-[0.9rem]">
+                                  text-[1.2rem] max-xxs:text-[0.8rem] max-xs:text-[0.9rem]">
                         {item.name}
                       </h2>
                     </div>
@@ -207,8 +207,8 @@ const StackOfCards = ({
                             return (
                               <p
                                 key={i}
-                                className="h-[10%] text-text1 max-xs:pr-4 pr-10 shrink-0 even:bg-[#171716] uppercase font-light flex items-left
-                                          max-xxs:text-[0.7rem] max-xs:text-[0.8rem] text-[0.65rem] md:text-[0.65rem] mdlg:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem]"
+                                className="h-[10%] text-text1 max-xs:pr-4 pr-10 shrink-0 even:bg-[#171716] uppercase font-light flex items-left items-center
+                                          max-xxs:text-[0.65rem] max-xs:text-[0.8rem] text-[0.65rem] md:text-[0.65rem] mdlg:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem]"
 
                               >
                                 {/* Professional design based on your brand guidelines. */}
@@ -232,7 +232,7 @@ const StackOfCards = ({
                                   text-[1.2rem] max-xxs:text-[1rem]
                                   xs:hidden
                     '>
-                      <span className='w-full h-full text-text1 shrink-0 px-[2rem] py-[1rem] max-xxs:py-[0.8rem] rounded-[1rem] max-xxs:rounded-[0.6rem]
+                      <span className='w-full h-full text-text1 shrink-0 px-[2rem] py-[0.8rem] max-xxs:py-[0.6rem] rounded-[1rem] max-xxs:rounded-[0.6rem]
                                       bg-[linear-gradient(89deg,rgba(7,39,101,1)_0%,rgba(14,21,36,1)_100%)]'>
                         Schedule a call
 

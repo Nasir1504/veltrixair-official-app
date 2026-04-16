@@ -100,21 +100,22 @@ const FeatureSection = () => {
                             Our culture is shaped by:
                         </p>
                         <div className='
-                                           w-full max-xxxs:h-[45%] max-xs:h-[50%] md:h-[30%] mdlg:h-[32%] lg:h-[35%] gap-[2%] overflow-scroll flex justify-center 
+                                           w-full max-xxs:h-[40%] max-xs:h-[45%] md:h-[30%] mdlg:h-[32%] lg:h-[35%] max-xxs:gap-[4%] max-xs:gap-[5%] gap-[2%] overflow-scroll flex justify-center 
                                            items-center flex-wrap'>
                             {/* grid grid-flow-col justify-start items-start */}
                             {OUR_CULTURE_BUILD_ON_DATA.map((item, i) => {
                                 return (
                                     <div
                                         key={i}
-                                        className="shrink-0 max-xxxs:w-[100px] max-xxs:w-[120px] max-xs:w-[160px] w-[125px] md:w-[140px] mdlg:w-[165px] lg:w-[205px] xl:w-[260px] max-xxs:h-[40%] max-xs:h-[45%] h-[95%] rounded-[0.6em] md:rounded-[0.6em] lg:rounded-[0.9em] xl:rounded-[1.2em] p-0.5 flex justify-center items-center flex-wrap
+                                        className="shrink-0 max-xxxs:w-[90px] max-xxs:w-[110px] max-xs:w-[150px] w-[150px] md:w-[130px] mdlg:w-[160px] lg:w-[195px] xl:w-[240px] 
+                                                    max-xxs:h-[45%] max-xs:h-[42%] h-[85%] rounded-[0.6em] md:rounded-[0.6em] lg:rounded-[0.9em] xl:rounded-[1.2em] p-0.5 flex justify-center items-center flex-wrap
                                                                            bg-[linear-gradient(90deg,rgba(185,181,181,1)_0%,rgba(44,44,44,1)_100%)]"
                                     >
                                         <div
                                             className='w-full h-full rounded-[0.6em] md:rounded-[0.6em] lg:rounded-[0.9em] xl:rounded-[1.2em] flex flex-col justify-center items-center gap-[4%]
                                                                bg-[linear-gradient(180deg,rgba(30,30,30,1)_0%,rgba(30,30,30,1)_33%,rgba(55,92,165,1)_110%,rgba(55,92,165,1)_120%)]'
                                         >
-                                            <div className='w-[60%] max-xxs:w-[80%] aspect-square bg-bg3 rounded-[0.6em] md:rounded-[0.6em] mdlg:rounded-[0.7em] lg:rounded-[0.9em] xl:rounded-[1.2rem] p-[20%]'>
+                                            <div className='w-[60%] max-xxs:w-[70%] aspect-square bg-bg3 rounded-[0.6em] md:rounded-[0.6em] mdlg:rounded-[0.7em] lg:rounded-[0.9em] xl:rounded-[1.2rem] p-[20%]'>
                                                 <img
                                                     src={item.imgURL}
                                                     className='w-full h-full'
@@ -157,7 +158,7 @@ const FeatureSection = () => {
                         </h3>
 
                         <div className="relative w-full h-full flex flex-col gap-[5%] justify-start items-start ">
-                            <p className="text-text1 capitalize max-xxs:text-[0.65rem] max-xs:text-[0.8rem] text-[0.7rem] md:text-[0.7rem] lg:text-[0.95rem] xl:text-[1rem]">
+                            <p className="text-text1 max-xs:font-semibold capitalize max-xxs:text-[0.75rem] max-xs:text-[0.8rem] text-[0.7rem] md:text-[0.7rem] lg:text-[0.95rem] xl:text-[1rem]">
                                 At our core, we value:
                             </p>
 
@@ -203,10 +204,10 @@ const FeatureSection = () => {
                     </section>
 
                     {/* -----------Sec03--------------------------- */}
-                    <section className='relative max-xs:h-[100vh] h-[500px] md:h-[500px] mdlg:h-[650px] lg:h-[700px] xl:h-[920px] flex justify-center items-center  max-xs:flex-col'>
+                    <section className='relative max-xs:h-[100vh] h-[500px] md:h-[500px] mdlg:h-[650px] lg:h-[700px] xl:h-[920px] flex justify-center items-center max-xs:flex-col'>
 
                         <div className='relative max-xs:w-full w-[60%] h-full max-xs:h-[70%] flex flex-col justify-center items-start overflow-hidden pl-[5%] gap-[5%]'>
-                            <h3 className='text-text1 font-bold max-xxxs:text-[1.6rem] max-xxs:text-[1.7rem] max-xs:text-[1.8rem] text-[1.25rem] md:text-[2.1rem] mdlg:text-[2.8rem] lg:text-[3.1rem] xl:text-[3.8rem] 
+                            <h3 className='text-text1 font-medium max-xxxs:text-[1.6rem] max-xxs:text-[1.7rem] max-xs:text-[1.8rem] text-[1.25rem] md:text-[2.1rem] mdlg:text-[2.8rem] lg:text-[3.1rem] xl:text-[3.8rem] 
                                             max-xxxs:leading-[2.2rem] max-xxs:leading-[2.3rem] max-xs:leading-[2.4rem] md:leading-[2.7rem] mdlg:leading-[3.4rem] lg:leading-[3.7rem] xl:leading-[4.4rem]
                                             '
                             >
@@ -214,7 +215,7 @@ const FeatureSection = () => {
                                 <span>work with us</span>
                             </h3>
                             <p
-                                className='text-text1 max-xxxs:text-[0.65rem] max-xxs:text-[0.75rem] max-xs:text-[1rem] max-xs:text-text2 text-[0.7rem] md:text-[0.9rem] lg:text-[1.3rem] xl:text-[1.6rem] pr-[10%] capitalize'
+                                className='text-text12 font-[Roboto_Mono] max-xxxs:text-[0.65rem] max-xxs:text-[0.75rem] max-xs:text-[1rem] max-xs:text-text2 text-[0.7rem] md:text-[0.9rem] lg:text-[1.3rem] xl:text-[1.6rem] pr-[10%] capitalize'
                             >
                                 Exposure to large-scale industrial projects<br />
                                 Hands-on learning with experienced engineers<br />
