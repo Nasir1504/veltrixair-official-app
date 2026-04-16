@@ -387,14 +387,14 @@ const IndustriesWeServe = () => {
                     </div>
                     {/* ------------ Middle Section ------------- */}
                     <div className="w-full h-[40%] sm:h-[50%] flex flex-col shrink-0 justify-center items-center gap-[5%]">
-                        <div className="flex flex-col justify-center items-center font-mono
-                                text-[1.4rem] md:text-[1.4rem] mdlg:text-[1.6rem] lg:text-[1.8rem] xl:text-[2rem]">
+                        <div className="flex flex-col justify-center items-center
+                                max-xs:text-[1.8rem] text-[1.4rem] md:text-[1.4rem] mdlg:text-[1.6rem] lg:text-[1.8rem] xl:text-[2.2rem]">
 
                             <p className=" text-text2 tracking-[-0.05em]">Why</p>
                             <h3
-                                className="relative font-[Saved_By_Zero] text-text10 leading-[1em] flex"
+                                className="relative text-text10 leading-[1.2em] flex uppercase font-semibold"
                             >
-                                <span className="relative text-text1" >industrial clients</span>
+                                <span className="relative text-text1" >Industrial clients</span>
                                 <span className="absolute"
                                     style={{
                                         opacity: dataCardOpacity(total, 1, 10)
@@ -403,23 +403,23 @@ const IndustriesWeServe = () => {
                                 >industrial clients</span>
 
                             </h3>
-                            <p className=" text-text2 tracking-[-0.05em]">choose Veltrixair</p>
+                            <p className=" text-text2 tracking-[-0.05em]">choose us</p>
                         </div>
                         <p
-                            className="text-text2 text-center max-xs:hidden
+                            className="text-text2 text-center max-xs:hidden font-[Roboto_Mono]
                                 text-[0.8rem] md:text-[0.8rem] mdlg:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem]"
                         >Trusted for secure IT infrastructure, structured system design<br />and reliable execution across cloud, networks, and enterprise platforms.</p>
 
                         <p
-                            className="text-text2 text-center xs:hidden w-[75%]
-                                max-xxs:text-[0.75rem] max-xs:text-[0.8rem] "
+                            className="text-text2 text-center xs:hidden w-[85%]
+                                max-xxs:text-[0.85rem] max-xs:text-[0.9rem] "
                         >Trusted for secure IT infrastructure, structured system design and reliable execution across cloud, networks, and enterprise platforms.</p>
 
                         {/* Schedule a call button */}
                         <div
-                            className="relative bg-[linear-gradient(90deg,rgba(7,39,101,1)_10%,rgba(30,30,30,1)_120%)] text-text1 font-bold
+                            className="relative bg-[linear-gradient(90deg,rgba(7,39,101,1)_10%,rgba(30,30,30,1)_120%)] text-text1 font-bold mt-[1em]
                                 text-[0.8rem] md:text-[0.8rem]  mdlg:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem]
-                                 w-[180px] md:w-[180px] mdlg:w-[200px] lg:w-[240px] xl:w-[280px] aspect-7/2 rounded-sm md:rounded-sm lg:rounded-md xl:rounded-lg p-[1px]"
+                                 w-[180px] md:w-[180px] mdlg:w-[200px] lg:w-[240px] xl:w-[280px] aspect-7/2 rounded-sm md:rounded-sm lg:rounded-md xl:rounded-lg p-0.5"
                         >
                             <div
                                 className="relative w-full h-full flex justify-center items-center rounded-xs md:rounded-xs lg:rounded-sm xl:rounded-md

@@ -37,7 +37,7 @@ const INFRASTRUCTURE_CARD_DATA = [
     {
         heading: "Industrial Manufacturing Facilities",
         subHeading: "IT Solutions",
-        concent: "WRobust IT systems for production environments that require reliable connectivity, system integration, and uninterrupted operational performance.",
+        concent: "Robust IT systems for production environments that require reliable connectivity, system integration, and uninterrupted operational performance.",
         imgURL: AboutCard2,
         bgColor: "072765",
         linkTo: "/###"

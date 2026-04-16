@@ -65,7 +65,7 @@ const SmarterDigitalSystems = () => {
                                         max-xs:text-[6vw]"
                     >cloud systems </span>
                 </h2>
-                <p className="reltive z-1 text-[1.25rem] md:text-[1rem] max-xs:text-[3vw] lg:text-[1.3rem] xl:text-[1.6rem] text-text1 w-[60%]
+                <p className="reltive z-1 font-[Roboto_Mono] text-[1.25rem] md:text-[1rem] max-xs:text-[3vw] lg:text-[1.3rem] xl:text-[1.6rem] text-text1 w-[60%]
                             ">for secure, scalable, and high-performance enterprise operations.</p>
 
             </div>

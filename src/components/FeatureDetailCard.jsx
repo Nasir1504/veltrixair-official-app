@@ -29,7 +29,7 @@ const ICCard = ({
                 <div className="w-full min-h-[50%] max-xs:pr-[1%] pr-[10%]">
                     <button
                         className={`max-xxs:w-[45%] text-text1 capitalize text-left max-xs:rounded-[0.5vw] pr-[0.4rem] h-[20px] md:h-[20px] lg:h-[24px] xl:h-[28px] rounded-[0.2vw]
-                                    max-xs:text-[0.7rem] text-[0.65rem] md:text-[0.65rem] mdlg:text-[0.7rem] lg:text-[0.8rem] xl:text-[1rem]`}
+                                    max-xs:text-[0.7rem] text-[0.65rem] md:text-[0.65rem] mdlg:text-[0.7rem] lg:text-[0.8rem] xl:text-[1rem] pl-1`}
                         style={{
                             background: `${BtnColor}`
                         }}
@@ -43,7 +43,7 @@ const ICCard = ({
                     >{Heading}</h3>
                     {/* •  */}
                     <p
-                        className={`max-xxs:text-[0.5rem] max-xs:text-[0.7rem] text-[0.65rem] md:text-[0.65rem] mdlg:text-[0.7rem] lg:text-[0.8rem] xl:text-[1rem] capitalize max-xxs:mt-[2%]
+                        className={`font-[Roboto_Mono] max-xxs:text-[0.5rem] max-xs:text-[0.7rem] text-[0.65rem] md:text-[0.65rem] mdlg:text-[0.7rem] lg:text-[0.8rem] xl:text-[1rem] capitalize max-xxs:mt-[2%]
                          ${cardNmbr === Id ? "text-text3" : `text-text11`}
                         `}
                     >{
@@ -54,7 +54,7 @@ const ICCard = ({
                 </div>
                 <div className="w-full max-xs:min-w-[165%] min-h-[50%] max-xs:mt-[5%] max-xs:pr-[10%] pr-[10%]">
                     <p
-                        className={`max-xxs:text-[0.5rem] max-xs:text-[0.7rem] text-[0.65rem] md:text-[0.65rem] mdlg:text-[0.7rem] lg:text-[0.8rem] xl:text-[1rem] capitalize
+                        className={`font-[Roboto_Mono] max-xxs:text-[0.5rem] max-xs:text-[0.7rem] text-[0.65rem] md:text-[0.65rem] mdlg:text-[0.7rem] lg:text-[0.8rem] xl:text-[1rem] capitalize
                          ${cardNmbr === Id ? "text-text3" : "text-text11"}
                         `}
                     >

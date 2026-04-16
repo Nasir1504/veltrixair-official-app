@@ -14,6 +14,10 @@ import Img12 from "./ERP-Solutions.png";
 import Img13 from "./Helpdesk-and-Managed-IT-Support.png";
 import Img14 from "./Professional-Email-and-Domain-Services.png";
 import Img15 from "./Digital-Marketing-Services.png";
+import Img16 from "./DevOps-Automation-Services.jpeg";
+import Img17 from "./Containerisation-and-Microservices.jpeg";
+import Img18 from "./Monitoring-and-Observability.jpeg";
+
 
 import Frame1 from "./frame1.png";
 import Frame2 from "./frame2.png";
@@ -52,9 +56,14 @@ import AboutCard6 from "./about-card6.png";
 
 import Shutter from "./shutter.png";
 
-
-
 import VisionVideo from "./vision-video.mp4";
+import ServiceCardVideo from "./service-card-video.mp4";
+
+import Icon1 from "./custom-it-solutions.png";
+import Icon2 from "./secure-and-scalable.png";
+import Icon3 from "./structured-delivery.png";
+import Icon4 from "./Long-term-support.png";
+
 
 
 
@@ -74,6 +83,10 @@ export {
     Img13,
     Img14,
     Img15,
+    Img16,
+    Img17,
+    Img18,
+
 
     Frame1,
     Frame2,
@@ -111,6 +124,12 @@ export {
 
     Collaborative,
     VisionVideo,
+    ServiceCardVideo,
 
     Shutter,
+
+    Icon1,
+    Icon2,
+    Icon3,
+    Icon4,
 }

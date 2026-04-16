@@ -23,3 +23,4 @@ export { default as NotFound } from "./NotFound";
 export { default as CookieConsent } from "./CookieConsent";
 export { default as FloatingBlob } from "./FloatingBlob";
 export { default as StackOfCards } from "./StackOfCards";
+export { default as ScrollReset } from "./ScrollReset";

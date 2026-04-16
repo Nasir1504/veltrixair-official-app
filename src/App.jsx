@@ -35,7 +35,8 @@ import { SERVICES_DATA } from "./pages/it-solutions/services/ServicesData";
 import {
   Loader,
   CookieConsent,
-  NotFound
+  NotFound,
+  ScrollReset
 } from "./components";
 
 // imgs
@@ -64,20 +65,7 @@ function App() {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
-
-
-
-    const reset = () => {
-      window.scrollTo(0, 0);
-      if (typeof window.scrollTo === 'function') {
-        window.scrollTo(0, 0);
-      }
-    };
-
-    reset();
-
-    setTimeout(reset, 50); // ensure after layout
-  }, [location.pathname]);
+  }, []);
 
   useEffect(() => {
     if (toggle.main) {
@@ -117,7 +105,7 @@ function App() {
         }}
       >
         {/* Reset scroll & kill stale GSAP on every route change */}
-        {/* <ScrollReset /> */}
+        <ScrollReset />
         {/* <p className="top-0 fixed z-40 text-2xl left-[50%]">{location.pathname}</p> */}
         <ScrollTracker
           setVelocity={setVelocity}

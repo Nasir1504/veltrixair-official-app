@@ -4,6 +4,9 @@ import ShutterContent from "./ShutterContent";
 import WhyChoose from "./WhyChoose";
 import { Footer } from "../../../components";
 import BuildInfrastructure from "../BuildInfrastructure";
+
+import { ServiceCardVideo } from "../../../assets/imgs/it-solutions";
+
 import {
     FloatingBlob,
     StackOfCards
@@ -57,6 +60,8 @@ const Services = ({
                 />
                 <StackOfCards
                     SolutionWeProvide={Item.solutionWeProvide}
+                    CardVideo={ServiceCardVideo}
+
                 />
                 <WhyChoose />
                 <BuildInfrastructure />

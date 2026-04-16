@@ -1,11 +1,15 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import VideoComponent from "../components/VideoComponent";
+import { ServiceCardVideo } from "../assets/imgs/it-solutions";
+import { DigitalSystem } from "../assets/imgs/home";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const StackOfCards = ({
-  SolutionWeProvide
+  SolutionWeProvide,
+  CardVideo
 }) => {
   const containerRef = useRef(null);
   const cardsRef = useRef([]);
@@ -64,18 +68,18 @@ const StackOfCards = ({
 
     // ---------------- CLEANUP ----------------
     return () => ctx.revert();
-  }, []); 
+  }, []);
 
 
   return (
     <div ref={containerRef} className="relative w-full">
-      <div className="absolute  z-1 w-full h-[40%] max-xs:h-[25%] flex flex-col justify-center items-center">
-        <h2 className="text-text1 font-[poppins] font-bold max-xs:leading-[4rem]
+      <div className="absolute  z-1 w-full h-[46%] max-xs:h-[30%] flex flex-col justify-center items-center">
+        <h2 className="text-text1 font-[poppins] font-semibold max-xs:leading-[4rem]
                        max-xxs:text-[1.4rem] max-xs:text-[1.8rem] max-xs:font-medium text-[1.8rem] md:text-[1.7rem] mdlg:text-[2rem] lg:text-[2.4rem] xl:text-[2.8rem]">
           {heading}</h2>
         <p
-          className="text-text1 max-xs:w-[90%] w-[42%] text-center
-                    md:text-[0.7rem] mdlg:text-[0.85rem] lg:text-[1.2rem] max-xxs:text-[0.85rem]"
+          className="text-text1 max-xs:w-[90%] w-[42%] text-center font-[Roboto_Mono] text-text12 font-semibold
+                    text-[0.7rem] md:text-[0.7rem] mdlg:text-[0.85rem] lg:text-[1.2rem] max-xxs:text-[0.85rem] max-xs:text-[0.9rem]"
         >
           {subHeading}
         </p>
@@ -93,7 +97,7 @@ const StackOfCards = ({
               className="absolute max-xxs:mt-[23%] max-xs:mt-[17%] mt-[6%] mdlg:mt-[6%] lg:mt-[8%] xl:mt-[7%] top-0 left-0 w-full h-full flex items-center justify-center will-change-transform"
               style={{ zIndex: subService.length - i }}
             >
-              <div className="relative w-[60%] h-[45%]  max-xxs:h-[65%] max-xs:h-[75%] max-xs:w-[70%] max-xxs:w-[85%]
+              <div className="relative w-[60%] h-[45%]  max-xxs:h-[65%] max-xs:h-[65%] max-xs:w-[60%] max-xxs:w-[85%]
                               bg-[linear-gradient(90deg,rgba(55,92,165,1)_0%,rgba(0,0,0,0)_100%)] flex items-center justify-center text-3xl font-bold shadow-2xl p-0.5 
                               rounded-[1.2rem] md:rounded-[1.2rem] mdlg:rounded-[1.5rem] lg:rounded-[1.8rem] xl:rounded-[2rem]">
                 <p className="absolute text-text1 right-8 top-5 font-light
@@ -110,7 +114,14 @@ const StackOfCards = ({
                                 rounded-[0.9rem] md:rounded-[0.9rem] mdlg:rounded-[1rem] lg:rounded-[1.1rem] xl:rounded-[1.2rem]"
                     >
                       {/* -------------- IMAGES or VIDEOS --------------- */}
-                      <div className="w-full h-full bg-bg3 flex justify-center items-center">{i + 1}</div>
+                      <div className="w-full h-full flex justify-center items-center">
+                        <VideoComponent
+                          src={ServiceCardVideo}
+                          poster={DigitalSystem}
+                          className="h-full w-full relative z-0"
+                          isMuteIcon={false}
+                        />
+                      </div>
                     </div>
                   </div>
                   {/* ---BUTTON---- */}
@@ -134,13 +145,20 @@ const StackOfCards = ({
 
                   {/* -------------- mobile --------------- */}
                   <div className="w-full max-xxs:h-[18%] h-[23%] pl-[3%] flex justify-center items-center xs:hidden">
-                    <div className="w-[35%] h-full rounded-[1.2rem] p-1 bg-[linear-gradient(220deg,rgba(55,92,165,1)_0%,rgba(0,0,0,0)_60%)]">
+                    <div className="w-[35%] h-full rounded-[0.6rem] p-1 bg-[linear-gradient(220deg,rgba(55,92,165,1)_0%,rgba(0,0,0,0)_60%)]">
                       <div
                         className="w-full h-full bg-[linear-gradient(125deg,rgba(0,0,0,1)_0%,rgba(36,36,36,1)_100%)] overflow-hidden
-                                rounded-[1.1rem]"
+                                max-xs:rounded-[0.5rem]"
                       >
                         {/* -------------- IMAGES or VIDEOS --------------- */}
-                        <div className="w-full h-full bg-[#ffffff90] flex justify-center items-center">{i + 1}</div>
+                        <div className="w-full h-full flex justify-center items-center">
+                          <VideoComponent
+                            src={ServiceCardVideo}
+                            poster={DigitalSystem}
+                            className="h-full w-full relative z-0"
+                            isMuteIcon={false}
+                          />
+                        </div>
                       </div>
                     </div>
                     <div className="w-[65%] h-full flex shrink-0 pl-[5%] justify-start items-center">

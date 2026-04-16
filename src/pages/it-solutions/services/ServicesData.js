@@ -1153,8 +1153,8 @@ export const SERVICES_DATA = [
     // 18 ------------------------
     {
         serviceName: "Monitoring & Observability",
-        headingPart1: "Monitoring",
-        headingPart2: "& Observability",
+        headingPart1: "Monitoring &",
+        headingPart2: "Observability",
         subHeading: "Veltrixair delivers infrastructure monitoring, network monitoring services and server monitoring services for business continuity.",
 
         solutionWeProvide: {
