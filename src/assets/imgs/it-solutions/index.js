@@ -14,9 +14,9 @@ import Img12 from "./ERP-Solutions.png";
 import Img13 from "./Helpdesk-and-Managed-IT-Support.png";
 import Img14 from "./Professional-Email-and-Domain-Services.png";
 import Img15 from "./Digital-Marketing-Services.png";
-import Img16 from "./DevOps-Automation-Services.jpeg";
-import Img17 from "./Containerisation-and-Microservices.jpeg";
-import Img18 from "./Monitoring-and-Observability.jpeg";
+import Img16 from "./DevOps-Automation-Services.png";
+import Img17 from "./Containerisation-and-Microservices.png";
+import Img18 from "./Monitoring-and-Observability.png";
 
 
 import Frame1 from "./frame1.png";
