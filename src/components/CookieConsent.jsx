@@ -16,18 +16,30 @@ const CookieConsent = () => {
     }, []);
 
     const handleAccept = () => {
-        Cookies.set("cookie_consent", "accepted", { expires: 365 });
+        Cookies.set("cookie_consent", "accepted", {
+            expires: 365,
+            sameSite: "Lax",
+            secure: true, // Cookie will be sent only over HTTPS
+        });
         loadAnalytics(); // 🔥 load immediately
         setVisible(false);
     };
 
     const handleReject = () => {
-        Cookies.set("cookie_consent", "rejected", { expires: 365 });
-        // Remove analytics cookies
-        // Cookies.remove("_ga");
-        // Cookies.remove("_ga_XXXXXXX");
-        Cookies.remove("_ga", { path: "/" });
-        Cookies.remove("_ga_BVPRK86ETY", { path: "/" });
+        Cookies.set("cookie_consent", "rejected", {
+            expires: 365,
+            sameSite: "Lax",
+            secure: true, // Cookie will be sent only over HTTPS
+        });
+
+
+        // Remove ALL common GA cookies
+        const gaCookies = ["_ga", "_gid", "_gat", "_ga_BVPRK86ETY"];
+
+        gaCookies.forEach((cookie) => {
+            Cookies.remove(cookie, { path: "/" });
+            Cookies.remove(cookie, { path: "/", domain: window.location.hostname });
+        });
         setVisible(false);
     };
 
@@ -37,6 +49,7 @@ const CookieConsent = () => {
         <div className="fixed bottom-0 left-0 w-full h-[20vh] px-[5%] bg-[#00000090] backdrop-blur-[10px] text-white p-4 flex flex-col md:flex-row justify-between items-center z-20">
             <p className="text-sm mb-2 md:mb-0 max-xxs:text-[0.7rem] max-xs:pt-[5%] text-[1rem]">
                 We use cookies to improve your experience.
+
             </p>
 
             <div className="flex gap-2">

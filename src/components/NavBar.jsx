@@ -186,7 +186,7 @@ const NavBar = ({
                                     to={item.siteURL}
                                     onClick={() => setToggle(false)}
                                     className={({ isActive }) =>
-                                        `text-[0.7rem] md:text-[0.7rem] lg:text-[0.75rem] xl:text-[0.8rem] hover:underline text-left w-full text-text1 ${isActive ? "underline" : ""}`
+                                        `text-[0.7rem] md:text-[0.7rem] mdlg:text-[0.54rem] lg:text-[0.65rem] xl:text-[0.8rem] hover:underline text-left w-full text-text1 ${isActive ? "underline" : ""}`
                                     }
                                 >
                                     {item.serviceName}

@@ -45,3 +45,8 @@ import { Helmet } from "react-helmet-async";
 
 
   clipPath: "rect(5px 100% 100% 5px round 20%)"
+
+
+font-[Roboto_Mono]
+
+font-[Poppins]

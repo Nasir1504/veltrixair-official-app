@@ -118,7 +118,7 @@ const FeatureSection = () => {
                             </div>
                             <div className='relative max-xs:w-full w-[60%] h-full flex flex-col justify-center items-start overflow-hidden pl-[5%]'>
                                 <h3 className='text-text1 text-[1.25rem] md:text-[2.1rem] mdlg:text-[2.6rem] lg:text-[3.1rem] xl:text-[3.8rem]
-                                            font-[Saved_By_Zero]'
+                                            uppercase font-semibold'
                                 >Recognition</h3>
                                 <p
                                     className='text-text1  max-xxs:text-[0.74rem] max-xs:text-[0.84rem] max-xs:text-text2 text-[0.7rem] md:text-[0.9rem] mdlg:text-[1.1rem] lg:text-[1.3rem] xl:text-[1.6rem] pr-[10%] capitalize'
@@ -153,7 +153,7 @@ const FeatureSection = () => {
 
                             <div className='relative w-full flex flex-col justify-center items-center overflow-hidden '>
                                 <h3 className='text-text1 max-xs:w-[80%] text-center max-xxs:text-[1.8rem] max-xs:text-[1.6rem] text-[1.25rem] md:text-[2.1rem] mdlg:text-[2.6rem] lg:text-[3.1rem] xl:text-[3.8rem]
-                                            font-[Saved_By_Zero]'
+                                            uppercase font-semibold'
                                 >Technical Partnerships</h3>
                                 <p
                                     className='text-text1 w-[60%] max-xs:w-[80%] max-xs:mt-[2%] max-xxs:text-[0.7rem] max-xs:text-[0.9rem] text-[0.9rem] md:text-[0.9rem] mdlg:text-[1.1rem] lg:text-[1.3rem] xl:text-[1.6rem] text-center'

@@ -5,12 +5,12 @@ export const useScreen = () => {
 
   useEffect(() => {
     const breakpoints = {
-      xxxs: 365,
-      xxs: 440,
+      xxxs: 355,
+      xxs: 410,
       xs: 653,
-      sm: 900,
-      md: 1024,
-      mdlg: 1250,
+      sm: 855,
+      md: 1020,
+      mdlg: 1240,
       lg: 1500,
       xl: 1900,
     };
@@ -20,7 +20,7 @@ export const useScreen = () => {
 
       if (width >= breakpoints.xl) setScreen("xl");
       else if (width >= breakpoints.lg) setScreen("lg");
-      else if (width >= breakpoints.md) setScreen("mdlg");
+      else if (width >= breakpoints.mdlg) setScreen("mdlg");
       else if (width >= breakpoints.md) setScreen("md");
       else if (width >= breakpoints.sm) setScreen("sm");
       else if (width >= breakpoints.xs) setScreen("xs");

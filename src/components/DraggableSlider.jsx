@@ -75,7 +75,7 @@ const DraggableSlider = ({
                                                 max-xs:text-[5vw]
                                               "
                 >Veltrixair</h2>
-                <p className="text-text2 text-[0.8rem] md:text-[0.8rem] mdlg:text-[0.9rem] lg:text-[1rem] xl:text-[1.3rem] max-xs:w-[90%] w-[50%] sm:w-[50%]
+                <p className="font-[Roboto_Mono] text-text2 text-[0.8rem] md:text-[0.8rem] mdlg:text-[0.9rem] lg:text-[1rem] xl:text-[1.3rem] max-xs:w-[90%] w-[50%] sm:w-[50%]
                                 max-xs:text-[2.5vw] max-xs:pr-[8%] max-xs:leading-[3.5vw] max-xs:mt-[2vw]">
                     {Content}
 

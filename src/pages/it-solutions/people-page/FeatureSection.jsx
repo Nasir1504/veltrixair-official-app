@@ -91,7 +91,8 @@ const FeatureSection = () => {
 
                         />
                         <h3 className='text-text1 text-center w-[50%] max-xs:w-[80%] max-xxs:w-[90%]
-                                                               max-xxxs:text-[0.8rem] max-xxs:text-[1rem] max-xs:text-[1.2rem] text-[1.1rem] md:text-[1.1rem] mdlg:text-[1.4rem] lg:text-[1.7rem] xl:text-[2.2rem] font-bold
+                                        max-xxxs:text-[0.8rem] max-xxs:text-[1rem] max-xs:text-[1.2rem] text-[1.1rem] md:text-[1.4rem] mdlg:text-[1.8rem] lg:text-[2rem] xl:text-[2.4rem] 
+                                        max-xxxs:leading-[1rem] max-xxs:leading-[1.2rem] max-xs:leading-[1.4rem] leading-[1.6rem] md:leading-[1.6rem] mdlg:leading-[2rem] lg:leading-[2.2rem] xl:leading-[2.6rem] font-semibold
                                                                '
                         >Built for professionals in IT infrastructure, systems, and enterprise operations.
                         </h3>
@@ -106,14 +107,14 @@ const FeatureSection = () => {
                                 return (
                                     <div
                                         key={i}
-                                        className="shrink-0 max-xxxs:w-[100px] max-xxs:w-[120px] max-xs:w-[160px] w-[125px] md:w-[150px] mdlg:w-[165px] lg:w-[205px] xl:w-[260px] max-xxs:h-[40%] max-xs:h-[45%] h-[95%] rounded-[0.6em] md:rounded-[0.6em] lg:rounded-[0.9em] xl:rounded-[1.2em] p-0.5 flex justify-center items-center flex-wrap
+                                        className="shrink-0 max-xxxs:w-[100px] max-xxs:w-[120px] max-xs:w-[160px] w-[125px] md:w-[140px] mdlg:w-[165px] lg:w-[205px] xl:w-[260px] max-xxs:h-[40%] max-xs:h-[45%] h-[95%] rounded-[0.6em] md:rounded-[0.6em] lg:rounded-[0.9em] xl:rounded-[1.2em] p-0.5 flex justify-center items-center flex-wrap
                                                                            bg-[linear-gradient(90deg,rgba(185,181,181,1)_0%,rgba(44,44,44,1)_100%)]"
                                     >
                                         <div
                                             className='w-full h-full rounded-[0.6em] md:rounded-[0.6em] lg:rounded-[0.9em] xl:rounded-[1.2em] flex flex-col justify-center items-center gap-[4%]
                                                                bg-[linear-gradient(180deg,rgba(30,30,30,1)_0%,rgba(30,30,30,1)_33%,rgba(55,92,165,1)_110%,rgba(55,92,165,1)_120%)]'
                                         >
-                                            <div className='w-[70%] max-xxs:w-[80%] aspect-square bg-bg3 rounded-[0.6em] md:rounded-[0.6em] mdlg:rounded-[0.7em] lg:rounded-[0.9em] xl:rounded-[1.2rem] p-[20%]'>
+                                            <div className='w-[60%] max-xxs:w-[80%] aspect-square bg-bg3 rounded-[0.6em] md:rounded-[0.6em] mdlg:rounded-[0.7em] lg:rounded-[0.9em] xl:rounded-[1.2rem] p-[20%]'>
                                                 <img
                                                     src={item.imgURL}
                                                     className='w-full h-full'
@@ -177,7 +178,7 @@ const FeatureSection = () => {
 
                                                         <div className="w-[55%] flex flex-col justify-center items-start h-full pr-[4%] gap-[5%]">
                                                             <p className="text-text1 capitalize max-xxs:text-[0.8rem] max-xs:text-[0.85rem] text-[0.7rem] md:text-[0.7rem] lg:text-[0.95rem] xl:text-[1.4rem] font-bold">{item.heading}</p>
-                                                            <p className="text-text2  max-xs:text-[0.55rem] max-xs:text-[0.6rem] text-[0.7rem] md:text-[0.7rem] lg:text-[0.95rem] xl:text-[1rem]">{item.content}</p>
+                                                            <p className="text-text2 max-xs:text-[0.55rem] max-xs:text-[0.6rem] text-[0.7rem] md:text-[0.7rem] lg:text-[0.95rem] xl:text-[1rem] font-[Roboto_Mono]">{item.content}</p>
                                                         </div>
                                                         <div className="w-[42%] h-[86%] bg-bg2 rounded-[1rem] overflow-hidden">
                                                             <VideoComponent
@@ -205,10 +206,11 @@ const FeatureSection = () => {
                     <section className='relative max-xs:h-[100vh] h-[500px] md:h-[500px] mdlg:h-[650px] lg:h-[700px] xl:h-[920px] flex justify-center items-center  max-xs:flex-col'>
 
                         <div className='relative max-xs:w-full w-[60%] h-full max-xs:h-[70%] flex flex-col justify-center items-start overflow-hidden pl-[5%] gap-[5%]'>
-                            <h3 className='text-text1 font-bold max-xxxs:text-[1.6rem] max-xxs:text-[1.7rem] max-xs:text-[1.8rem] max-xs:leading-[1.5rem] text-[1.25rem] md:text-[2.1rem] lg:text-[3.1rem] xl:text-[3.8rem] md:leading-[2rem] lg:leading-[2.8rem] xl:leading-[3.6rem]
+                            <h3 className='text-text1 font-bold max-xxxs:text-[1.6rem] max-xxs:text-[1.7rem] max-xs:text-[1.8rem] text-[1.25rem] md:text-[2.1rem] mdlg:text-[2.8rem] lg:text-[3.1rem] xl:text-[3.8rem] 
+                                            max-xxxs:leading-[2.2rem] max-xxs:leading-[2.3rem] max-xs:leading-[2.4rem] md:leading-[2.7rem] mdlg:leading-[3.4rem] lg:leading-[3.7rem] xl:leading-[4.4rem]
                                             '
                             >
-                                <span className='font-[Saved_By_Zero]'>Why</span><br />
+                                <span className=''>Why</span><br />
                                 <span>work with us</span>
                             </h3>
                             <p

@@ -69,10 +69,10 @@ const BuildInfrastructure = ({
                 <div className="max-xs:h-[2vh] sm:h-[5%]" />
                 <div className="max-xs:h-[18%] sm:h-[28%]">
                     <h2
-                        className="text-text1 max-xs:text-[4vw] text-[1.7rem] md:text-[1.7rem] mdlg:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.5rem]"
+                        className="text-text1 max-xs:text-[5.5vw] text-[1.7rem] md:text-[1.7rem] mdlg:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.5rem]"
                     >Complete It Solutions</h2>
                     <h2
-                        className="text-text1 max-xs:text-[4vw] text-[1.7rem] md:text-[1.7rem] mdlg:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.5rem] font-bold"
+                        className="text-text1 max-xs:text-[5.5vw] text-[1.7rem] md:text-[1.7rem] mdlg:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.5rem] font-bold"
                     >You can trust</h2>
                 </div>
 
@@ -97,7 +97,7 @@ const BuildInfrastructure = ({
                         </div>
                         :
                         <div className="relative w-full max-xs:mt-[8vh] max-xs:h-[8vh] h-[28%] md:h-[28%] bg-bg2 rounded-md flex max-xs:flex-col justify-around items-center max-xs:gap-[6%] sm:gap-[2%] p-[2%] text-text1 max-xs:text-[2.2vw] text-[0.8rem] md:text-[0.8rem] lg:text-[1.05rem] xl:text-[1.2rem]">
-                            <p className="absolute left-0 max-xs:bottom-[105%] sm:bottom-[120%] text-text1 max-xs:text-[2.5vw] text-[0.8rem] md:text-[0.8rem]  mdlg:text-[0.9rem]lg:text-[1rem] xl:text-[1.2rem] opacity-90
+                            <p className="absolute left-0 max-xs:bottom-[105%] sm:bottom-[120%] text-text1 max-xs:text-[3vw] text-[0.8rem] md:text-[0.8rem]  mdlg:text-[0.9rem]lg:text-[1rem] xl:text-[1.2rem] opacity-90
                     "
                             >Select your next step with our team</p>
                             <button

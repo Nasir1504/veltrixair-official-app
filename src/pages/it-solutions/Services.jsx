@@ -42,6 +42,10 @@ import {
     Img13,
     Img14,
     Img15,
+    Img16,
+    Img17,
+    Img18,
+
 
 } from "../../assets/imgs/it-solutions";
 
@@ -65,7 +69,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: ".NET, PHP, Python, JavaScript, Android/iOS, React, Angular, Salesforce, UX design",
         imgURL: Img1,
         bgColor: "072765",
-        linkTo: "/construction-services-saudi-arabia",
+        linkTo: "it-infrastructure-solutions/custom-software-development",
         // videoLink: ConstructionHomepageCard
     },
     {
@@ -75,7 +79,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "LAN, WAN, Wi-Fi, routers, firewalls, VPN, SD-WAN, bandwidth optimisation",
         imgURL: Img2,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/network-infrastructure-services",
         // videoLink: ITHomepageCard
     },
     {
@@ -85,7 +89,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "CCTV design, fibre cabling, structured networks, troubleshooting, maintenance",
         imgURL: Img3,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/network-cctv-systems",
         // videoLink: ConsultancyHomepageCard
     },
 
@@ -96,7 +100,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "Dedicated Internet Access (DIA), point-to-point links, satellite internet",
         imgURL: Img4,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/internet-connectivity-services",
         // videoLink: ConsultancyHomepageCard
     },
     {
@@ -106,7 +110,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "Data centres, cloud architecture, disaster recovery planning, high-availability systems",
         imgURL: Img5,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/it-infrastructure-design-services",
         // videoLink: ConsultancyHomepageCard
     },
     {
@@ -116,7 +120,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "Server rooms, cooling systems, power management, rack systems, monitoring",
         imgURL: Img6,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/data-centre-infrastructure",
         // videoLink: ConsultancyHomepageCard
     },
 
@@ -127,7 +131,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "Physical and virtual servers, VMware, Hyper-V, patching, DNS, DHCP Reply",
         imgURL: Img7,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/server-infrastructure-services",
         // videoLink: ConsultancyHomepageCard
     },
     {
@@ -137,7 +141,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "SAN, NAS, DAS, cloud storage, backup systems, storage virtualisation",
         imgURL: Img8,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/cloud-storage-services",
         // videoLink: ConsultancyHomepageCard
     },
     {
@@ -147,7 +151,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "AWS, Azure, GCP, hybrid cloud, CI/CD pipelines, cost optimisation",
         imgURL: Img9,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/cloud-migration-services",
         // videoLink: ConsultancyHomepageCard
     },
 
@@ -158,7 +162,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "Firewalls, EDR, SIEM, email security, web security, IPS, IDS",
         imgURL: Img10,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/cybersecurity-services",
         // videoLink: ConsultancyHomepageCard
     },
     {
@@ -168,7 +172,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "Disaster recovery planning, automated backups, failover testing, offsite recovery",
         imgURL: Img11,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/backup-disaster-recovery",
         // videoLink: ConsultancyHomepageCard
     },
     {
@@ -178,7 +182,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "HRMS, payroll, finance, procurement, inventory, asset management",
         imgURL: Img12,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/erp-services",
         // videoLink: ConsultancyHomepageCard
     },
 
@@ -189,7 +193,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "L1, L2, L3 support, remote helpdesk, onsite support, SLA-based services",
         imgURL: Img13,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/managed-it-support-services",
         // videoLink: ConsultancyHomepageCard
     },
     {
@@ -199,7 +203,7 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "Microsoft 365, Google Workspace, domain registration, migrations",
         imgURL: Img14,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/business-email-domain-services",
         // videoLink: ConsultancyHomepageCard
     },
     {
@@ -209,7 +213,38 @@ export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
         subContent: "SEO, SEM, social media marketing, content marketing, CRM, email campaigns",
         imgURL: Img15,
         bgColor: "072765",
-        linkTo: "",
+        linkTo: "it-infrastructure-solutions/digital-marketing-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+
+    {
+        heading: "DevOps and automation for faster deployments and infrastructure management.",
+        subHeading: "DevOps & Automation Services",
+        concent: "Scope:",
+        subContent: "CI/CD pipelines, Terraform, Jenkins, GitOps, infrastructure automation",
+        imgURL: Img16,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/devops-automation-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Container-based application deployment for scalable, consistent, and flexible enterprise system environments.",
+        subHeading: "Containerisation & Microservices",
+        concent: "Scope:",
+        subContent: "Docker, Kubernetes, microservices architecture, orchestration",
+        imgURL: Img17,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/containerisation-microservices",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Real-time monitoring & observability systems ensuring infrastructure performance, availability & issue detection.",
+        subHeading: "Monitoring & Observability",
+        concent: "Scope:",
+        subContent: "Prometheus, Grafana, ELK stack, alerts, performance monitoring",
+        imgURL: Img18,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/monitoring-observability",
         // videoLink: ConsultancyHomepageCard
     },
 ]
@@ -266,49 +301,49 @@ const Services = () => {
     useEffect(() => {
         if (screen === "xl") {
             setSize({
-                scrollVal: 212,
-                scrollFactor: 280
+                scrollVal: 274,
+                scrollFactor: 340
             })
         }
         else if (screen === "lg") {
             setSize({
-                scrollVal: 244,
-                scrollFactor: 300
+                scrollVal: 312,
+                scrollFactor: 374
             })
 
         }
         else if (screen === "mdlg") {
             setSize({
-                scrollVal: 238,
-                scrollFactor: 320
+                scrollVal: 307,
+                scrollFactor: 370
             })
 
         }
         else if (screen === "md") {
             setSize({
-                scrollVal: 220,
-                scrollFactor: 325
+                scrollVal: 283,
+                scrollFactor: 355
             })
 
         }
         else if (screen === "xs") {
             setSize({
-                scrollVal: 481,
-                scrollFactor: 600
+                scrollVal: 598,
+                scrollFactor: 720
             })
 
         }
         else if (screen === "xxs") {
             setSize({
-                scrollVal: 806,
-                scrollFactor: 1000
+                scrollVal: 988,
+                scrollFactor: 1200
             })
 
         }
         else if (screen === "xxxs") {
             setSize({
-                scrollVal: 930,
-                scrollFactor: 1100
+                scrollVal: 1136,
+                scrollFactor: 1480
             })
 
         }
@@ -413,19 +448,19 @@ const Services = () => {
                         />
                         <div className="flex h-[32%] flex-col justify-center items-center gap-1.5 md:gap-1.5 lg:gap-2 max-xs:pb-[14%] pb-[2%]">
                             <h4
-                                className="font-['Saved_By_Zero'] text-text2 text-[1rem] md:text-[1rem] mdlg:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.8rem]
-                                            max-xs:text-[1rem] max-xxs:text-[0.55rem]"
+                                className="text-text2 text-[1rem] md:text-[1.2rem] mdlg:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem]
+                                            max-xs:text-[1.2rem] max-xxs:text-[0.9rem]"
                             >
                                 What We Do
                             </h4>
-                            <h2 className="text-white text-center font-bold text-[1.4rem] md:text-[1.4rem] mdlg:text-[1.6rem] lg:text-[1.9rem] xl:text-[2.1rem] leading-tight [text-shadow:0.06em_0.06em_2px_rgba(0,0,0,08)]
-                              max-xs:text-[1.5rem] max-xxs:text-[0.9rem]"
+                            <h2 className="text-white text-center font-semibold text-[1.4rem] md:text-[1.4rem] mdlg:text-[1.6rem] lg:text-[1.9rem] xl:text-[2.1rem] leading-tight [text-shadow:0.06em_0.06em_2px_rgba(0,0,0,08)]
+                              max-xs:text-[1.5rem] max-xxs:text-[1rem]"
                             >
                                 <span>We deliver full-stack IT </span>
                                 <br />
                                 <span>infrastructure and digital systems</span>
                             </h2>
-                            <p className="text-text2 text-[0.7rem] md:text-[0.7rem] mdlg:text-[0.8rem] lg:text-[0.9rem] xl:text-[1rem] capitalize
+                            <p className="font-[Roboto_Mono] text-text2 text-[0.7rem] md:text-[0.7rem] mdlg:text-[0.8rem] lg:text-[0.9rem] xl:text-[1rem] capitalize
                             max-xs:text-[1rem] max-xs:text-center max-xxs:text-[0.6rem] max-xs:px-[10%] max-xs:mt-[2%] px-[20%] text-center"
                             >
                                 covering strategy, deployment, operations, and long-term support — across cloud, networks, data centers, cybersecurity, and enterprise platforms.
@@ -643,26 +678,26 @@ const Services = () => {
                             >
                                 <button
                                     onClick={() => { setToggle(true) }}
-                                    className="cursor-pointer duration-500 ease-in-out"
+                                    className="font-[Poppins] font-semibold cursor-pointer duration-500 ease-in-out"
                                     style={{
                                         color: !toggle ? "#99999960" : "#fff",
                                         transform: toggle ? "scale(1)" : "scale(0.75)",
                                         // textDecoration: toggle ? "underline" : "none"
                                     }}
-                                >mission</button>
+                                >MISSION</button>
                                 <button
                                     onClick={() => { setToggle(false) }}
-                                    className="cursor-pointer duration-500 ease-in-out"
+                                    className="font-[Poppins] font-semibold cursor-pointer duration-500 ease-in-out"
                                     style={{
                                         color: !toggle ? "#fff" : "#99999960",
                                         transform: toggle ? "scale(0.75)" : "scale(1)",
                                         // textDecoration: toggle ? "none" : "underline"
                                     }}
-                                >vision</button>
+                                >VISION</button>
 
                             </div>
                             <p
-                                className="text-text6 text-center capitalize font-medium
+                                className="text-text6 text-center capitalize font-medium font-[Roboto_Mono]
                                            max-xs:text-[2.5vw] text-[0.8rem] md:text-[0.8rem] mdlg:text-[0.9rem] lg:text-[1rem] xl:text-[1.12rem]"
                             > {toggle ?
                                 <span>To deliver secure, scalable IT infrastructure<br />and digital systems supporting reliable and<br />high-performance enterprise operations.</span> :
