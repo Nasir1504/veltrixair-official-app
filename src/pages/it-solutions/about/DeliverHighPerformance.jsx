@@ -20,11 +20,11 @@ const DeliverHighPerformance = () => {
                     className="absolute max-xs:left-[28%] left-[80%] max-xxs:top-[-12%] max-xs:top-[-10%] top-[-15%] z-2 rounded-[100%] max-xs:w-[45%] w-[30%] aspect-2/1 bg-bg2 blur-[60px] lg:blur-[80px] xl:blur-[100px] duration-200 ease-in-out"
 
                 />
-                <p className="max-xxs:mt-[4rem] max-xs:mt-[2.5rem] font-[Saved_by_zero] text-text1 max-xxs:font-bold max-xxs:text-[0.8rem] max-xs:text-[1.2rem] text-[1.04rem] md:text-[1.04rem] mdlg:text-[1.4rem] lg:text-[1.8rem] uppercase xl:text-[2.2rem] max-xxs:leading-[1.2rem] md:leading-[1.4rem] lg:leading-[1.8rem] xl:leading-[2.2rem]
+                <p className="max-xxs:mt-[4rem] max-xs:mt-[2.5rem] font-[Saved_by_zero] uppercase text-text1 max-xxs:font-bold max-xxxs:text-[0.8rem] max-xxs:text-[1rem] max-xs:text-[1.4rem] text-[1.6rem] md:text-[1.3rem] mdlg:text-[1.6rem] lg:text-[2rem] xl:text-[2.2rem] max-xxs:leading-[1.2rem] max-xs:leading-[1.6rem] md:leading-[1.4rem] lg:leading-[1.8rem] xl:leading-[2.2rem]
                                 max-xs:text-left max-xs:w-full tracking-[0.1rem]">VeltrixAir delivers</p>
-                <h2 className="lowercase text-text12 max-xxxs:text-[0.85rem] max-xxs:text-[0.9rem] text-[1.5rem] md:text-[1.5rem] mdlg:text-[1.8rem] lg:text-[2.2rem] xl:text-[2.4rem] max-xxs:leading-[1.2rem] leading-[1.8rem] lg:leading-[2.4rem] xl:leading-[3rem] xl:tracking-[-0.2rem] lg:tracking-[-0.18rem] md:tracking-[-0.16rem]
-                                max-xs:text-left max-xs:text-[1.4rem] max-xs:w-[70%] w-[80%]"
-                >enterprise-grade IT infrastructure designed for</h2>
+                <h2 className=" text-text12 max-xxxs:text-[0.85rem] max-xxs:text-[1rem] text-[1.5rem] md:text-[1.5rem] mdlg:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.4rem] max-xxs:leading-[1.2rem] max-xs:leading-[1.6rem] leading-[1.8rem] lg:leading-[2.4rem] xl:leading-[3rem] xl:tracking-[-0.05rem] lg:tracking-[-0.1rem] mdlg:tracking-[-0.1rem] md:tracking-[-0.1rem]
+                                max-xs:text-left max-xs:text-[1.4rem] max-xs:w-[80%] w-[80%]"
+                >Enterprise-grade IT infrastructure designed for</h2>
 
                 <div className="flex flex-wrap mt-[5%] max-xs:justify-left justify-start items-center max-xs:gap-x-[2%] gap-x-[2%] max-xs:gap-y-[1%] sm:gap-y-[4%] gap-y-[8%] md:gap-y-[8%] 
                                 max-xs:w-full">
@@ -55,7 +55,7 @@ const DeliverHighPerformance = () => {
                     </div>
                 </div>
 
-                <p className="text-text12 mt-[5%] text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] xl:text-[1.1rem] capitalize
+                <p className="font-[Roboto_Mono] text-text12 mt-[5%] text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] xl:text-[1.1rem] capitalize
                                 max-xxs:text-[0.65rem] max-xs:text-[0.9rem] max-xs:w-full max-xs:text-left w-[80%]"
                 >From industrial infrastructure to commercial developments, our approach combines engineering precision with execution excellence.</p>
             </div>

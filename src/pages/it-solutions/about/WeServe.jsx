@@ -136,7 +136,7 @@ const WeServe = () => {
                     <h3 className="text-text1 text-[1.5rem] md:text-[1.5rem] mdlg:text-[1.8rem] lg:text-[2.2rem] xl:text-[2.8rem]">
                         Who We Serve
                     </h3>
-                    <p className="text-text12 max-xxxs:text-[0.65rem] max-xxs:text-[0.75rem] text-[0.8rem] md:text-[0.8rem] mdlg:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] capitalize max-xs:text-center max-xxs:w-[80%] max-xs:w-[75%] w-[60%] text-center
+                    <p className="text-text12 font-[Roboto_Mono] max-xxxs:text-[0.65rem] max-xxs:text-[0.75rem] text-[0.8rem] md:text-[0.8rem] mdlg:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] capitalize max-xs:text-center max-xxs:w-[80%] max-xs:w-[75%] w-[60%] text-center
                     ">Supporting enterprises, industrial operations and distributed business environments with secure, scalable IT infrastructure, cloud systems and network solutions.
 
                     </p>

@@ -61,15 +61,15 @@ const WhyChoose = () => {
                     Businesses rely on Veltrixair for secure infrastructure, scalable systems, disciplined execution and long-term IT performance through critical environments
                 </p>
                 <div className='
-                                 w-full max-xxxs:h-[65%] max-xxs:h-[60%] max-xs:h-[60%] h-[38%] md:h-[38%] mdlg:h-[39%] lg:h-[40%] max-xxs:gap-y-[0%] max-xs:gap-[8%] gap-[2%] overflow-scroll flex justify-center 
+                                 w-[70%] max-xxxs:h-[44%] max-xxs:h-[44%] max-xs:h-[48%] h-[38%] md:h-[38%] mdlg:h-[39%] lg:h-[40%] max-xxs:gap-y-[0%] max-xs:gap-[8%] gap-[2%] overflow-scroll flex justify-center 
                                 items-center flex-wrap'>
                     {/* grid grid-flow-col justify-start items-start */}
                     {OUR_CULTURE_BUILD_ON_DATA.map((item, i) => {
                         return (
                             <div
                                 key={i}
-                                className="shrink-0 max-xxxs:w-[150px] max-xxs:w-[160px] max-xs:w-[190px] w-[180px] md:w-[180px] mdlg:w-[210px] lg:w-[245px] xl:w-[290px] 
-                                                    max-xxs:h-[45%] max-xs:h-[42%] h-[100%] rounded-[0.6em] md:rounded-[0.6em] lg:rounded-[0.9em] xl:rounded-[1.2em] p-0.5 flex justify-center items-center flex-wrap
+                                className="shrink-0 max-xxxs:w-[110px] max-xxs:w-[130px] max-xs:w-[150px] w-[150px] md:w-[150px] mdlg:w-[180px] lg:w-[205px] xl:w-[250px] 
+                                                    max-xxs:h-[45%] max-xs:h-[42%] h-[80%] rounded-[0.6em] md:rounded-[0.6em] lg:rounded-[0.9em] xl:rounded-[1.2em] p-0.5 flex justify-center items-center flex-wrap
                                         bg-[linear-gradient(90deg,rgba(185,181,181,1)_0%,rgba(44,44,44,1)_100%)]"
                             >
                                 <div

@@ -169,7 +169,7 @@ function App() {
         {/* ------------------ */}
         {/* LOADER */}
         <div
-          className={`fixed w-full h-[100vh] z-25 top-0 left-0 bg-bg1 flex justify-center items-center
+          className={`fixed w-full h-screen z-25 top-0 left-0 bg-bg1 flex justify-center items-center
            text-white  `}
           style={{ display: showLoader ? "" : "none" }}
 
