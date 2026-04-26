@@ -1,9 +1,6 @@
 import { useState, useMemo, useRef, useEffect } from "react";
-// import { useScreen } from "../../components/useScreen";
-import {
-    InfrastructureCard,
-    MainServiceCard
-} from "../../components";
+import { useScreen } from "../../components/useScreen";
+import { InfrastructureCard } from "../../components";
 import { Stickyroll } from "@stickyroll/react";
 // components
 import {
@@ -26,9 +23,10 @@ import {
     Frame3,
     Frame4,
     Frame5,
-    Frame6,
+    Frame6
+} from "../../assets/imgs/it-solutions";
 
-
+import {
     Img1,
     Img2,
     Img3,
@@ -49,8 +47,6 @@ import {
     Img18,
 
 
-    Shutter
-
 } from "../../assets/imgs/it-solutions";
 
 import {
@@ -67,75 +63,188 @@ import VeltrixairIcon from "../../assets/imgs/footer/veltrixair-logo-type-one.pn
 
 export const INFRASTRUCTURE_CARD_ITSOLUTIONS = [
     {
-        heading: "Automate workflows with custom apps",
-        btnName: "Custom Software & Applications",
-        serviceDetails: ".NET, PHP, Python, JavaScript, Android/iOS, React, Angular, Salesforce, UX design",
+        heading: "Enterprise-grade web, mobile and business applications built using secure, scalable and modern development frameworks.",
+        subHeading: "Custom Software Development",
+        concent: "Scope:",
+        subContent: ".NET, PHP, Python, JavaScript, Android/iOS, React, Angular, Salesforce, UX design",
         imgURL: Img1,
-        linkTo: "it-infrastructure-solutions/software-and-application-development",
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/custom-software-development",
         // videoLink: ConstructionHomepageCard
     },
-
     {
-        heading: "IT infrastructure & network solution",
-        btnName: "IT Infrastructure Design Services",
-        serviceDetails: "Data centres, cloud architecture, disaster recovery planning, high-availability systems",
-        imgURL: Img6,
-        linkTo: "it-infrastructure-solutions/it-infrastructure-and-network-services",
-        // videoLink: ConsultancyHomepageCard
-    },
-
-    {
-        heading: "Secure cloud storage & backup",
-        btnName: "Cloud Storage Services",
-        serviceDetails: "SAN, NAS, DAS, cloud storage, backup systems, storage virtualisation",
-        imgURL: Img9,
-        linkTo: "it-infrastructure-solutions/cloud-and-data-services",
-        // videoLink: ConsultancyHomepageCard
-    },
-
-    {
-        heading: "Protect data from cyber attacks",
-        btnName: "Cybersecurity Services",
-        serviceDetails: "Firewalls, EDR, SIEM, email security, web security, IPS, IDS",
-        imgURL: Img10,
-        linkTo: "it-infrastructure-solutions/cybersecurity-and-compliance",
-        // videoLink: ConsultancyHomepageCard
-    },
-
-    {
-        heading: "Managed IT & business services",
-        btnName: "IT Support Services",
-        serviceDetails: "L1, L2, L3 support, remote helpdesk, onsite support, SLA-based services",
-        imgURL: Img13,
-        linkTo: "it-infrastructure-solutions/managed-it-and-business-services",
-        // videoLink: ConsultancyHomepageCard
-    },
-
-    {
-        heading: "DevOps automation & faster deployment",
-        btnName: "DevOps & Automation Services",
+        heading: "Design, deployment, and management of secure, scalable enterprise network infrastructure and connectivity systems.",
+        subHeading: "Network Infrastructure Services",
         concent: "Scope:",
-        serviceDetails: "CI/CD pipelines, Terraform, Jenkins, GitOps, infrastructure automation",
-        imgURL: Img16,
-        linkTo: "it-infrastructure-solutions/devops-and-automation-services",
+        subContent: "LAN, WAN, Wi-Fi, routers, firewalls, VPN, SD-WAN, bandwidth optimisation",
+        imgURL: Img2,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/network-infrastructure-services",
+        // videoLink: ITHomepageCard
+    },
+    {
+        heading: "Integrated surveillance, structured cabling and network systems for secure monitoring and infrastructure connectivity.",
+        subHeading: "Network & CCTV Systems",
+        concent: "Scope:",
+        subContent: "CCTV design, fibre cabling, structured networks, troubleshooting, maintenance",
+        imgURL: Img3,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/network-cctv-systems",
         // videoLink: ConsultancyHomepageCard
     },
 
     {
-        heading: "SEO & digital marketing for leads",
-        btnName: "Digital Marketing Services",
-        serviceDetails: "SEO, SEM, social media marketing, content marketing, CRM, email campaigns",
-        imgURL: Img15,
-        linkTo: "it-infrastructure-solutions/digital-and-growth-services",
+        heading: "High-speed, reliable internet connectivity solutions for enterprise operations and remote or critical environments.",
+        subHeading: "Internet Connectivity Services",
+        concent: "Scope:",
+        subContent: "Dedicated Internet Access (DIA), point-to-point links, satellite internet",
+        imgURL: Img4,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/internet-connectivity-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Planning and design of scalable, secure IT infrastructure aligned with enterprise and operational requirements.",
+        subHeading: "IT Infrastructure Design Services",
+        concent: "Scope:",
+        subContent: "Data centres, cloud architecture, disaster recovery planning, high-availability systems",
+        imgURL: Img5,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/it-infrastructure-design-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Design, setup, and management of enterprise data centre environments for reliable and high-performance operations.",
+        subHeading: "Data Centre Infrastructure",
+        concent: "Scope:",
+        subContent: "Server rooms, cooling systems, power management, rack systems, monitoring",
+        imgURL: Img6,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/data-centre-infrastructure",
         // videoLink: ConsultancyHomepageCard
     },
 
     {
-        heading: "ERP software to streamline ops",
-        btnName: "ERP Services",
-        serviceDetails: "HRMS, payroll, finance, procurement, inventory, asset management",
+        heading: "Provisioning and management of enterprise server environments for efficient processing, storage, and system performance.",
+        subHeading: "Server Infrastructure Services",
+        concent: "Scope:",
+        subContent: "Physical and virtual servers, VMware, Hyper-V, patching, DNS, DHCP Reply",
+        imgURL: Img7,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/server-infrastructure-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "High-performance, scalable storage systems integrated with cloud and backup solutions for efficient data management.",
+        subHeading: "Cloud Storage Services",
+        concent: "Scope:",
+        subContent: "SAN, NAS, DAS, cloud storage, backup systems, storage virtualisation",
+        imgURL: Img8,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/cloud-storage-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Cloud infrastructure services covering adoption, migration, optimisation, and scalable deployment across enterprise environments.",
+        subHeading: "Cloud Migration Services",
+        concent: "Scope:",
+        subContent: "AWS, Azure, GCP, hybrid cloud, CI/CD pipelines, cost optimisation",
+        imgURL: Img9,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/cloud-migration-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+
+    {
+        heading: "Security infrastructure and protection systems designed to safeguard enterprise networks, systems, and data.",
+        subHeading: "Cybersecurity Services",
+        concent: "Scope:",
+        subContent: "Firewalls, EDR, SIEM, email security, web security, IPS, IDS",
+        imgURL: Img10,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/cybersecurity-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Data protection and recovery systems ensuring business continuity and rapid restoration from failures or disruptions.",
+        subHeading: "Backup & Disaster Recovery",
+        concent: "Scope:",
+        subContent: "Disaster recovery planning, automated backups, failover testing, offsite recovery",
+        imgURL: Img11,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/backup-disaster-recovery",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Enterprise resource planning systems enabling integrated business processes, automation, and operational efficiency.",
+        subHeading: "ERP Services",
+        concent: "Scope:",
+        subContent: "HRMS, payroll, finance, procurement, inventory, asset management",
         imgURL: Img12,
+        bgColor: "072765",
         linkTo: "it-infrastructure-solutions/erp-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+
+    {
+        heading: "24/7 IT support and managed services ensuring system stability, performance, and continuous issue resolution.",
+        subHeading: "Managed IT Support Services",
+        concent: "Scope:",
+        subContent: "L1, L2, L3 support, remote helpdesk, onsite support, SLA-based services",
+        imgURL: Img13,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/managed-it-support-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Secure email and domain infrastructure supporting professional communication and enterprise identity management.",
+        subHeading: "Business Email & Domain Services",
+        concent: "Scope:",
+        subContent: "Microsoft 365, Google Workspace, domain registration, migrations",
+        imgURL: Img14,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/business-email-domain-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Digital marketing services focused on visibility, engagement, and measurable business growth across online channels.",
+        subHeading: "Digital Marketing Services",
+        concent: "Scope:",
+        subContent: "SEO, SEM, social media marketing, content marketing, CRM, email campaigns",
+        imgURL: Img15,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/digital-marketing-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+
+    {
+        heading: "DevOps and automation for faster deployments and infrastructure management.",
+        subHeading: "DevOps & Automation Services",
+        concent: "Scope:",
+        subContent: "CI/CD pipelines, Terraform, Jenkins, GitOps, infrastructure automation",
+        imgURL: Img16,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/devops-automation-services",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Container-based application deployment for scalable, consistent, and flexible enterprise system environments.",
+        subHeading: "Containerisation & Microservices",
+        concent: "Scope:",
+        subContent: "Docker, Kubernetes, microservices architecture, orchestration",
+        imgURL: Img17,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/containerisation-microservices",
+        // videoLink: ConsultancyHomepageCard
+    },
+    {
+        heading: "Real-time monitoring & observability systems ensuring infrastructure performance, availability & issue detection.",
+        subHeading: "Monitoring & Observability",
+        concent: "Scope:",
+        subContent: "Prometheus, Grafana, ELK stack, alerts, performance monitoring",
+        imgURL: Img18,
+        bgColor: "072765",
+        linkTo: "it-infrastructure-solutions/monitoring-observability",
         // videoLink: ConsultancyHomepageCard
     },
 ]
@@ -158,11 +267,10 @@ const MobileShowCase = [
 
 ]
 
+// -------- Section One ----------
 
 
-const Services = ({
-    IsMobile
-}) => {
+const Services = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
         setProgress({ Progress: 0, Page: 0 });
@@ -188,20 +296,70 @@ const Services = ({
     const total = progress.Progress + progress.Page;
 
 
-    // -------- Section One ----------
+    const screen = useScreen();
+
+    useEffect(() => {
+        if (screen === "xl") {
+            setSize({
+                scrollVal: 274,
+                scrollFactor: 340
+            })
+        }
+        else if (screen === "lg") {
+            setSize({
+                scrollVal: 312,
+                scrollFactor: 374
+            })
+
+        }
+        else if (screen === "mdlg") {
+            setSize({
+                scrollVal: 307,
+                scrollFactor: 370
+            })
+
+        }
+        else if (screen === "md") {
+            setSize({
+                scrollVal: 283,
+                scrollFactor: 355
+            })
+
+        }
+        else if (screen === "xs") {
+            setSize({
+                scrollVal: 598,
+                scrollFactor: 720
+            })
+
+        }
+        else if (screen === "xxs") {
+            setSize({
+                scrollVal: 988,
+                scrollFactor: 1200
+            })
+
+        }
+        else if (screen === "xxxs") {
+            setSize({
+                scrollVal: 1136,
+                scrollFactor: 1480
+            })
+
+        }
+    }, [screen])
+
 
 
 
     // -------- Section Two ----------
 
     const sectionTwoTranslate =
-        `translateY(-${clamp(0, 100, (total - 1.95) * 150)}vh)`;
+        `translateY(-${clamp(0, 100, (total - 1.95) * 800)}vh)`;
 
     const transforms = useMemo(() => ({
-        circleScale: `scale(${clamp(1, 55, (total - 2.65) * 10)})`,
-        ellipseScale: `scale(${clamp(0.6, 1, (total - 2.3) * 3)})`,
-        ellipseScaleMob: `scale(${clamp(0.6, 1.2, (total - 2.3) * 3.2)})`,
-
+        circleScale: `scale(${clamp(1, 5, (total - 2.12) * 35)})`,
+        ellipseScale: `scale(${clamp(0.6, 1, (total - 2) * 10)})`,
     }), [total]);
 
 
@@ -209,40 +367,35 @@ const Services = ({
     // -------- Section Two ----------
 
     const getRotate = (dir = "-") => {
-        if (total <= 2.65) {
+        if (total <= 2) {
             return "rotate(0deg)"
         }
-        return `rotate(${dir}${clamp(0, 320, Math.abs((total - 2.2) * 150))}deg)`;
+        return `rotate(${dir}${clamp(0, 320, Math.abs((total - 2.2) * 300))}deg)`;
 
     };
 
 
 
     const ellipseScaleSmall =
-        `scale(${clamp(0.4, 1, (total - 2.3) * 3.5)})`;
-
-    const ellipseScaleSmallMob =
-        `scale(${clamp(0.4, 1.3, (total - 2.3) * 3.8)})`;
+        `scale(${clamp(0.4, 1, (total - 2) * 10)})`;
 
     const fadeOpacity1 =
-        clamp(0, 1, 1 - (total - 2.78) * 10);
+        clamp(0, 1, 1 - (total - 2.18) * 14);
 
 
     // --------- Section Three -------------------
 
-    const scaleBackground = `scale(${clamp(0.1, 1, (total - 2.85) * 3.5)})`
-    const scaleBackgroundMob = `scale(${clamp(0.1, 1, (total - 2.85) * 2.2)})`
-
-    const indexUpdate = total > 2.8 ? 1 : 0;
+    const scaleBackground = `scale(${clamp(0.1, 1, (total - 2.2) * 10)})`
+    const indexUpdate = total > 2.3 ? 1 : 0;
     const fadeOpacity2 =
-        clamp(0, 1, (total - 2.88) * 10);
+        clamp(0, 1, (total - 2.26) * 15);
 
 
 
     return (
         <Stickyroll
-            pages={2.4}
-            factor={2}
+            pages={1.4}
+            factor={5}
             // className="bg-yellow-200"
             className="bg-bg8"
             onProgress={(prog, page) => {
@@ -265,7 +418,7 @@ const Services = ({
                     <span>{progress.Progress}</span>
                     <span>PAGE: {progress.Page}</span>
                     <span>Total: {total}</span>
-                    <span>{Math.max(0.8, Math.min(1, ((total-1.1) *5)))}</span>
+                    <span>{clamp(0, 100, (total - 1.95) * 800)}</span>
                     <span>{screen}</span>
                 </p> */}
 
@@ -279,145 +432,71 @@ const Services = ({
                         backfaceVisibility: "hidden",
                     }}
                 >
-                    <div className="relative w-full h-full flex justify-between items-center"
-                        style={{
-                            opacity: `${clamp(0, 1, (1 - ((total - 1.8) * 10)))}`
-                        }}
-                    >
-                        <div
-                            className="absolute bg-bg2 w-full h-full z-0"
-                        />
-
-                        <div
-                            className=" z-1 w-[50%] top-0 left-0 h-full opacity-20"
-                            style={{
-                                background: `url(${Shutter})`,
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover"
-                            }}
-                        />
-                        <div
-                            className=" z-1 w-[50%] top-0 right-0 h-full scale-x-[-1] opacity-20"
-                            style={{
-                                background: `url(${Shutter})`,
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover"
-                            }}
-                        />
-
-                    </div>
-                    <div />
-                    <section className="absolute top-0 flex flex-col justify-center items-center w-full max-xs:h-[120vh] h-full overflow-hidden
+                    <section className="absolute top-0 flex flex-col justify-center items-center w-full h-full overflow-hidden
                                         z-1"
                         style={{
                             transform: sectionTwoTranslate
                         }}
                     >
-                        <div className="relative flex h-[32%] flex-col justify-center items-center gap-1.5 md:gap-1.5 lg:gap-2 max-xs:pb-[14%] pb-[2%] will-change-transform"
+                        <div
+                            className="absolute max-xxs:top-[-6%] max-xs:top-[-15%] top-[-20%] rounded-[100%] max-xs:w-[45%] w-[28%] aspect-2/1 bg-bg9 z-3 blur-[60px] lg:blur-[80px] xl:blur-[100px] duration-200 ease-in-out"
                             style={{
-
-                                transform:
-                                    !IsMobile ? (
-                                        total >= 1.1 && total < 1.5 ? `translateY(-${clamp(0, 95, ((total - 1.1) * 300))}%)` :
-                                            total >= 1.1 ? `scale(${clamp(0.8, 1, (1 - ((total - 1.5) * 2)))}) translateY(-95%)` : "translateY(0%)"
-                                    ) : (
-                                        total >= 1.1 && total < 1.5 ? `translateY(-${clamp(15, 40, ((total - 1.1) * 140))}vh)` :
-                                            total >= 1.1 ? `scale(${clamp(0.8, 1, (1 - ((total - 1.5) * 2)))}) translateY(-95%)` : "translateY(-15vh)"
-                                    ),
-
-
-                                opacity: `${clamp(0, 1, (1 - ((total - 1.5) * 10)))}`
+                                opacity: `${clamp(0, 1, ((total - 1) * 40))}`
 
                             }}
-                        >
 
-                            <h2 className="text-text4 font-medium text-center text-[1.2rem] md:text-[1.2rem] mdlg:text-[1.4rem] lg:text-[1.6rem] xl:text-[2.1rem] leading-tight
-                              max-xs:text-[1.6rem] max-xxs:text-[1.2rem] max-xxxs:text-[1.05rem] capitalize"
+                        />
+                        <div className="flex h-[32%] flex-col justify-center items-center gap-1.5 md:gap-1.5 lg:gap-2 max-xs:pb-[14%] pb-[2%]">
+                            <h4
+                                className="text-text2 text-[1rem] md:text-[1.2rem] mdlg:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem]
+                                            max-xs:text-[1.2rem] max-xxs:text-[0.9rem]"
                             >
-                                <em className="text-text3">We deliver</em> <span>Full-Stack IT </span>
+                                What We Do
+                            </h4>
+                            <h2 className="text-white text-center font-semibold text-[1.4rem] md:text-[1.4rem] mdlg:text-[1.6rem] lg:text-[1.9rem] xl:text-[2.1rem] leading-tight [text-shadow:0.06em_0.06em_2px_rgba(0,0,0,08)]
+                              max-xs:text-[1.5rem] max-xxs:text-[1rem]"
+                            >
+                                <span>We deliver full-stack IT </span>
                                 <br />
-                                <span>infrastructure & digital systems</span>
+                                <span>infrastructure and digital systems</span>
                             </h2>
-                            <p className="font-[Roboto_Mono] text-text3 font-medium text-[0.6rem] md:text-[0.6rem] mdlg:text-[0.7rem] lg:text-[0.8rem] xl:text-[1rem] capitalize
-                            max-xs:text-[0.8rem] max-xxs:text-[0.6rem] max-xxxs:text-[0.54rem] max-xs:text-center max-xxs:px-[12%] max-xs:px-[18%] max-xs:mt-[2%] px-[20%] text-center"
+                            <p className="font-[Roboto_Mono] text-text2 text-[0.7rem] md:text-[0.7rem] mdlg:text-[0.8rem] lg:text-[0.9rem] xl:text-[1rem] capitalize
+                            max-xs:text-[1rem] max-xs:text-center max-xxs:text-[0.6rem] max-xs:px-[10%] max-xs:mt-[2%] px-[20%] text-center"
                             >
                                 covering strategy, deployment, operations, and long-term support — across cloud, networks, data centers, cybersecurity, and enterprise platforms.
                             </p>
                         </div>
+                        <div className="relative w-full">
+                            <div className="flex gap-[2%]"
+                                style={{
+                                    // transform: `translateX(-${clamp(0, 262, ((total - 1.1) * 360))}%)`
+                                    transform: `translateX(-${clamp(0, size.scrollVal, ((total - 1.1) * size.scrollFactor))}%)`
 
+                                }}
+                            >
 
-                        <div className="absolute w-full max-xxxs:px-[4%] max-xxs:px-[6%] max-xs:px-[10%] px-[10%] xl:px-[12%] will-change-transform
-                                        grid grid-cols-4 grid-rows-2 gap-y-[8%] justify-items-center items-center
-                                        max-xs:grid-cols-2 max-xs:grid-rows-4"
-                            style={{
-                                top: total < 1.5 ? `${clamp(35, 80, (80 - ((total - 1.1) * 150)))}%` :
-                                    `${clamp(-25, 35, (35 - ((total - 1.5) * 150)))}%`,
-                                perspective: "1000px"
-                            }}
-                        >
-
-                            {!IsMobile ?
-                                //------ Desktop ---------
-
-                                INFRASTRUCTURE_CARD_ITSOLUTIONS.map((item, i) => {
-                                    return (
-                                        <div
-                                            className="will-change-transform"
+                                {INFRASTRUCTURE_CARD_ITSOLUTIONS.map((item, i) => (
+                                    <div
+                                        key={i}
+                                        className="shrink-0 text-text1"
+                                    >
+                                        <InfrastructureCard
                                             key={i}
-
-                                            style={{
-                                                transform: i === 0 ? `rotate(-${clamp(0, 26, (26 - ((total - 1.1) * 100)))}deg) translate(-${clamp(0, 10, (10 - ((total - 1.1) * 120)))}%, -${clamp(0, 30, (30 - ((total - 1.1) * 120)))}%)` :
-                                                    i === 1 ? `rotate(-${clamp(0, 19, (19 - ((total - 1.1) * 70)))}deg) translate3d(0 ,-${clamp(0, 25, (25 - ((total - 1.1) * 100)))}%, -${clamp(0, 80, (80 - ((total - 1.1) * 360)))}px)` :
-
-                                                        i === 2 ? `rotate(${clamp(0, 19, (19 - ((total - 1.1) * 70)))}deg) translate3d(0 ,-${clamp(0, 25, (25 - ((total - 1.1) * 100)))}%, -${clamp(0, 80, (80 - ((total - 1.1) * 360)))}px)` :
-                                                            i === 3 && `rotate(${clamp(0, 26, (26 - ((total - 1.1) * 100)))}deg) translate(${clamp(0, 10, (10 - ((total - 1.1) * 120)))}%, -${clamp(0, 30, (30 - ((total - 1.1) * 120)))}%)`
-                                            }}
-                                        >
-                                            <MainServiceCard
-                                                Id={i}
-                                                Heading={item.heading}
-                                                BtnName={item.btnName}
-                                                ServiceDetails={item.serviceDetails}
-                                                ImgURL={item.imgURL}
-                                                LinkTo={item.linkTo}
-
-                                            />
-                                        </div>
-                                    )
-                                })
-                                :
-                                //------ Mobile ---------
-
-                                INFRASTRUCTURE_CARD_ITSOLUTIONS.map((item, i) => {
-                                    return (
-                                        <div
-                                            className="will-change-transform"
-                                            key={i}
-
-                                            style={{
-                                                transform:
-                                                    i === 0 ? `rotate(-${clamp(0, 18, (18 - ((total - 1.1) * 60)))}deg) translate3d(${clamp(0, 15, (15 - ((total - 1.1) * 100)))}vw, -${clamp(0, 120, (120 - ((total - 1.1) * 410)))}vh,-${clamp(0, 45, (45 - ((total - 1.1) * 155)))}rem)` :
-                                                        i === 1 ? `rotate(${clamp(0, 20, (20 - ((total - 1.1) * 70)))}deg) translate3d(-${clamp(0, 70, (70 - ((total - 1.1) * 420)))}vw,-${clamp(0, 195, (195 - ((total - 1.1) * 645)))}vh,-${clamp(0, 45, (45 - ((total - 1.1) * 155)))}rem)` :
-                                                            i === 2 ? `rotate(-${clamp(0, 18, (18 - ((total - 1.1) * 60)))}deg) translate3d(0vw,-${clamp(0, 92, (92 - ((total - 1.1) * 310)))}vh,-${clamp(0, 45, (45 - ((total - 1.1) * 150)))}rem)` :
-                                                                i === 3 && `rotate(${clamp(0, 20, (20 - ((total - 1.1) * 66)))}deg) translate3d(-${clamp(0, 35, (35 - ((total - 1.1) * 145)))}vw,-${clamp(0, 160, (160 - ((total - 1.1) * 542)))}vh,-${clamp(0, 65, (65 - ((total - 1.1) * 215)))}rem)`
-
-                                            }}
-
-                                        >
-                                            <MainServiceCard
-                                                Id={i}
-                                                IsMobile={IsMobile}
-                                                Heading={item.heading}
-                                                BtnName={item.btnName}
-                                                ServiceDetails={item.serviceDetails}
-                                                ImgURL={item.imgURL}
-                                                LinkTo={item.linkTo}
-
-                                            />
-                                        </div>
-                                    )
-                                })
-                            }
+                                            Id={i}
+                                            Heading={item.heading}
+                                            SubHeading={item.subHeading}
+                                            Concent={item.concent}
+                                            SubContent={item.subContent}
+                                            ImgURL={item.imgURL}
+                                            BGColor={item.bgColor}
+                                            LinkTo={item.linkTo}
+                                            // VideoUrl={item.videoLink}
+                                            showIcon={false}
+                                            HoverEffect={false}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </section>
 
@@ -433,7 +512,7 @@ const Services = ({
                             className="relative max-xs:w-[280px] w-[360px] md:w-[360px] lg:w-[520px] xl:w-[620px] flex justify-center items-center aspect-square border border-[#AFAFAF] rounded-full"
                             style={{
                                 transform: transforms.circleScale,
-                                display: total > 3.2 && "none"
+                                display: total > 2.27 && "none"
 
                             }}
                         >
@@ -473,7 +552,7 @@ const Services = ({
                             />
 
                             <img
-                                className="absolute min-w-[130%] max-xs:hidden"
+                                className="absolute min-w-[130%]"
                                 src={EllipseTwo}
                                 style={{
                                     objectFit: "contain",
@@ -485,40 +564,12 @@ const Services = ({
                                 loading="lazy"
                             />
 
-                            {/* mobile */}
                             <img
-                                className="absolute min-w-[130%] xs:hidden"
-                                src={EllipseTwo}
-                                style={{
-                                    objectFit: "contain",
-                                    transform: `${transforms.ellipseScaleMob} ${getRotate("-")}`,
-                                    willChange: "transform",
-                                    backfaceVisibility: "hidden",
-                                }}
-                                alt=""
-                                loading="lazy"
-                            />
-
-                            <img
-                                className="absolute min-w-[200%] max-xs:hidden"
+                                className="absolute min-w-[200%]"
                                 src={EllipseThree}
                                 style={{
                                     objectFit: "contain",
                                     transform: `${ellipseScaleSmall} ${getRotate("+")}`,
-                                    willChange: "transform",
-                                    backfaceVisibility: "hidden",
-
-                                }}
-                                alt=""
-                                loading="lazy"
-                            />
-                            {/* mob */}
-                            <img
-                                className="absolute min-w-[200%] xs:hidden"
-                                src={EllipseThree}
-                                style={{
-                                    objectFit: "contain",
-                                    transform: `${ellipseScaleSmallMob} ${getRotate("+")}`,
                                     willChange: "transform",
                                     backfaceVisibility: "hidden",
 
@@ -533,7 +584,7 @@ const Services = ({
                                 <ScaleShowcase
                                     Direction="left"
                                     Total={total}
-                                    ByFactor={2.35}
+                                    Byactor={2}
                                     Clamp={clamp}
                                     imgURL1={Frame3}
                                     imgURL2={Frame2}
@@ -547,7 +598,7 @@ const Services = ({
                                 <ScaleShowcase
                                     Direction="right"
                                     Total={total}
-                                    ByFactor={2.35}
+                                    Byactor={2}
                                     Clamp={clamp}
                                     imgURL1={Frame4}
                                     imgURL2={Frame5}
@@ -567,9 +618,7 @@ const Services = ({
 
                             <div className="absolute w-full h-full z-[-2] rounded-full flex justify-center items-center xs:hidden"
                                 style={{
-                                    transform:
-                                        total < 2.64 ? `scale(${clamp(0.4, 1, (total - 2.33) * 3.8)}) rotate(0deg)` :
-                                            total >= 2.64 ? `scale(1) rotate(-${clamp(0, 320, Math.abs((total - 2.65) * 300))}deg)` : "scale(1) rotate(0deg)",
+                                    transform: total < 2.127 ? `scale(${clamp(0.4, 1, (total - 2) * 8)})` : `rotate(-${clamp(0, 320, Math.abs((total - 2.127) * 300))}deg)`,
                                     opacity: `${clamp(0, 1, (total - 2) * 8)}`,
                                     willChange: "transform",
                                     backfaceVisibility: "hidden",
@@ -618,7 +667,7 @@ const Services = ({
                             willChange: "transform",
                             zIndex: indexUpdate,
                             opacity: fadeOpacity2,
-                            transform: !IsMobile ? scaleBackground : scaleBackgroundMob,
+                            transform: scaleBackground,
 
                         }}
                     >
@@ -683,20 +732,3 @@ const Services = ({
 export default Services;
 
 
-
-
-
-// transform: i === 0 ? `rotate(-${clamp(0, 26, (26 - ((total - 1.1) * 100)))}deg) translate(-${clamp(0, 10, (10 - ((total - 1.1) * 120)))}%, -${clamp(0, 30, (30 - ((total - 1.1) * 120)))}%)` :
-//     i === 1 ? `rotate(-${clamp(0, 19, (19 - ((total - 1.1) * 70)))}deg) translate3d(0 ,-${clamp(0, 25, (25 - ((total - 1.1) * 100)))}%, -${clamp(0, 80, (80 - ((total - 1.1) * 360)))}px)` :
-
-//         i === 2 ? `rotate(${clamp(0, 19, (19 - ((total - 1.1) * 70)))}deg) translate3d(0 ,-${clamp(0, 25, (25 - ((total - 1.1) * 100)))}%, -${clamp(0, 80, (80 - ((total - 1.1) * 360)))}px)` :
-//             i === 3 && `rotate(${clamp(0, 26, (26 - ((total - 1.1) * 100)))}deg) translate(${clamp(0, 10, (10 - ((total - 1.1) * 120)))}%, -${clamp(0, 30, (30 - ((total - 1.1) * 120)))}%)`
-
-
-// transform:
-//     i === 0 ? `rotate(${clamp(0, 20, (20 - ((total - 1.1) * 65)))}deg) translate3d(-${clamp(0, 16, (16 - ((total - 1.1) * 51)))}vw,-${clamp(0, 200, (200 - ((total - 1.1) * 650)))}vh,-${clamp(0, 45, (45 - ((total - 1.1) * 150)))}rem)` :
-//         i === 1 ? `rotate(-${clamp(0, 18, (18 - ((total - 1.1) * 60)))}deg) translate3d(-${clamp(0, 40, (40 - ((total - 1.1) * 129)))}vw,-${clamp(0, 110, (110 - ((total - 1.1) * 358)))}vh,-${clamp(0, 35, (35 - ((total - 1.1) * 150)))}rem)` :
-
-//             i === 2 ? `rotate(${clamp(0, 18, (18 - ((total - 1.1) * 60)))}deg) translate3d(${clamp(0, 30, (30 - ((total - 1.1) * 120)))}vw, -${clamp(0, 140, (140 - ((total - 1.1) * 455)))}vh, -${clamp(0, 50, (50 - ((total - 1.1) * 170)))}rem)` :
-//                 // i === 3 && `rotate(-18deg) translate3d(-45vw,-95vh,-35rem)`
-//                 i === 3 && `rotate(-${clamp(0, 18, (18 - ((total - 1.1) * 60)))}deg) translate3d(-${clamp(0, 45, (45 - ((total - 1.1) * 145)))}vw,-${clamp(0, 95, (95 - ((total - 1.1) * 310)))}vh,-${clamp(0, 35, (35 - ((total - 1.1) * 150)))}rem)`

@@ -5,15 +5,15 @@ const ScaleShowcase = ({
     Direction = "left",
     Total,
     Clamp,
-    Byactor,
+    ByFactor,
     imgURL1,
     imgURL2,
     imgURL3,
 
 }) => {
 
-    const translateSection = `translateX(-${Clamp(0, 240, 240 - (Total - Byactor) * 2200)}%)`;
-    const translateSection1 = `translateX(-${Clamp(0, 100, 100 - (Total - Byactor) * 1200)}%)`;
+    const translateSection = `translateX(-${Clamp(0, 240, 240 - (Total - ByFactor) * 1200)}%)`;
+    const translateSection1 = `translateX(-${Clamp(0, 100, 100 - (Total - ByFactor) * 500)}%)`;
     
     return (
         <div

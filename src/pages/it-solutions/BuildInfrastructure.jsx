@@ -41,13 +41,15 @@ const BuildInfrastructure = ({
 
             // Infinite Marquee Scroll Animation
             gsap.to(text, {
-                xPercent: -81, // move left
+                xPercent: -50, // move left
                 ease: "none",
                 scrollTrigger: {
                     trigger: text,
-                    start: "top 90%",
+                    start: "top 65%",
                     end: "bottom 10%",
                     scrub: true,
+                    // markers: true,
+
                 },
             });
 
@@ -111,15 +113,15 @@ const BuildInfrastructure = ({
 
             </div>
 
-            <div ref={textRef} className="flex max-xs:gap-2 gap-10 md:gap-10 h-[35%] items-center max-xs:text-[8vw] text-[6rem] md:text-[6rem] mdlg:text-[7rem] lg:text-[7.5rem] xl:text-[8rem] max-xs:font-bold md:font-medium">
+            <div ref={textRef} className="flex max-xs:gap-2 gap-10 md:gap-10 h-[35%] items-center max-xs:text-[6vw] text-[4.6rem] md:text-[4.6rem] mdlg:text-[5.8rem] lg:text-[7rem] xl:text-[8rem] max-xs:font-bold md:font-medium">
 
                 <em className="whitespace-nowrap">
                     WHERE INFRASTRUCTURE MEETS INTELLIGENCE.
                 </em>
-                <em className="whitespace-nowrap">
+                {/* <em className="whitespace-nowrap">
                     WHERE INFRASTRUCTURE MEETS INTELLIGENCE.
 
-                </em>
+                </em> */}
             </div>
 
         </div>
