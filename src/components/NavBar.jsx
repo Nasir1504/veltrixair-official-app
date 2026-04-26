@@ -66,7 +66,7 @@ const NavBar = ({
 
     return (
         <div className={`flex flex-col select-none max-xs:hidden font-['Roboto_Mono'] 
-                        ${toggle ? "h-[250px] md:h-[250px] lg:h-[275px] xl:h-[300px]" : "h-[50px] md:h-[50px] lg:h-[55px] h-[60px]"}`}
+                        ${toggle ? "h-[220px] md:h-[220px] lg:h-[280px] xl:h-[300px]" : "h-[50px] md:h-[50px] lg:h-[55px] h-[60px]"}`}
         >
             <div className='w-full h-[60px] shrink-0 flex justify-center gap-[48%] items-center user'>
                 <div className="relative w-[70px] h-full flex justify-start items-center ">
@@ -89,14 +89,14 @@ const NavBar = ({
                     />
 
                 </div>
-                <div className="uppercase w-[40%] flex items-center justify-center gap-[5%] font-bold
+                <div className="w-[40%] flex items-center justify-center gap-[5%] font-bold
                                 text-[0.85rem] md:text-[0.85rem] lg:text-[0.9rem] xl:text-[1rem]">
 
                     <NavLink
                         to="/"
                         end
                         className={({ isActive }) =>
-                            `shrink-0 text-text1 hover:underline ${isActive ? "underline" : ""}`
+                            `shrink-0 text-text1 hover:underline ${isActive ? "uppercase" : ""}`
                         }
                     >Home</NavLink>
 
@@ -105,19 +105,19 @@ const NavBar = ({
                     >
                         <span
                             className={`
-                            hover:underline uppercase
+                            hover:underline text-text1
                      
                         `}
                         >Services</span>
-                        <span className={`lowercase no-underline ${toggle ? "rotate-0 mb-[6%] md:mb-[6%] lg:mb-[4%] xl:mb-[2%]" : "rotate-180 md:mt-[4%] lg:mt-[0%] xl:mt-[4%]"}
-                                            text-[0.8rem] md:text-[0.8rem] lg:text-[0.85rem] xl:text-[0.9rem]
+                        <span className={`lowercase no-underline ${toggle ? "rotate-0 mb-[6%] md:mb-[5%] mdlg:mb-[5%] lg:mb-[4%] xl:mb-[2%]" : "rotate-180 md:mt-[4%] lg:mt-[0%] xl:mt-[4%]"}
+                                            text-[0.8rem] md:text-[1rem] lg:text-[0.85rem] xl:text-[0.9rem]
                         `}>V</span>
                     </button>
 
                     <NavLink
                         to="./about"
                         className={({ isActive }) =>
-                            `shrink-0 text-text1 hover:underline ${isActive ? "underline" : ""}`
+                            `shrink-0 text-text1 hover:underline ${isActive ? "uppercase" : ""}`
                         }
                         onClick={() => setToggle(false)}
                     >
@@ -127,7 +127,7 @@ const NavBar = ({
                     <NavLink
                         to="./people"
                         className={({ isActive }) =>
-                            `shrink-0 text-text1 hover:underline ${isActive ? "underline" : ""}`
+                            `shrink-0 text-text1 hover:underline ${isActive ? "uppercase" : ""}`
                         }
                         onClick={() => setToggle(false)}
 
@@ -175,10 +175,10 @@ const NavBar = ({
 
             {/* ------------------------------------------- */}
             <div className='w-full flex-1 shrink-0 flex justify-between items-center px-[5%] overflow-hidden'>
-                <div className="flex flex-col justify-center items-start w-[70%] h-full gap-[6%]
+                <div className="flex flex-col justify-center items-start w-[60%] h-full gap-[6%]
                 text-[0.7rem] md:text-[0.8rem] lg:text-[1.1rem] xl:text-[1.2rem] py-[2%]
                 ">
-                    <div className="w-full h-full grid grid-cols-4 justify-start items-center gap-[5%] gap-y-[0]">
+                    <div className="w-full h-full grid grid-cols-2 justify-start items-center gap-[2%] gap-y-0">
                         {
                             SERVICES_DATA.map((item, i) => {
                                 return <NavLink
@@ -186,7 +186,7 @@ const NavBar = ({
                                     to={item.siteURL}
                                     onClick={() => setToggle(false)}
                                     className={({ isActive }) =>
-                                        `text-[0.7rem] md:text-[0.7rem] mdlg:text-[0.54rem] lg:text-[0.65rem] xl:text-[0.8rem] hover:underline text-left w-full text-text1 ${isActive ? "underline" : ""}`
+                                        `font-semibold text-[0.7rem] md:text-[0.75rem] mdlg:text-[0.85rem] lg:text-[0.9rem] xl:text-[1rem] hover:underline text-left w-full text-text1 ${isActive ? "uppercase" : ""}`
                                     }
                                 >
                                     {item.serviceName}
@@ -284,7 +284,7 @@ const NavBar = ({
                 {/* </div> */}
                 {/* ---------------------------------------- */}
 
-                <div className="h-[80%] w-[20%] bg-bg2 flex justify-center items-center">
+                <div className="h-[65%] w-[15%] bg-bg2 flex justify-center items-center">
                     <img
                         src={VeltrixairIcon3}
                         alt=""
@@ -392,10 +392,11 @@ const NavBarMobile = ({
     return (
         <div
             ref={ref}
-            className={`flex flex-col justify-start items-start gap-[5%] pt-[25%] pl-[5%] select-none xs:hidden h-screen max-xxxs:text-[1.2rem] max-xxs:text-[1.4rem] max-xs:text-[1.6rem] font-['Roboto_Mono']
+            className={`flex flex-col justify-start items-start gap-[5%] pt-[25%] pl-[5%] select-none xs:hidden h-screen
+                        max-xxxs:text-[1.2rem] max-xxs:text-[1.4rem] max-xs:text-[1.6rem] font-['Roboto_Mono']
                         `} >
             {/* <BlockScrollSection /> */}
-            
+
             {/* CROSS BUTTON */}
             <button className={`absolute right-[5%] top-[2%] shrink-0 max-xxs:text-[1.5rem] text-[2rem] flex flex-col justify-between items-end cursor-pointer`}
                 onClick={() => SetToggle(p => ({
@@ -554,7 +555,7 @@ const NavBarMobile = ({
 
                         {
                             subNavItem === 2 &&
-                            <div className="flex flex-col w-full h-[90vh] max-xxs:gap-[0.8rem] gap-[1rem] px-[5%] py-[4%] overflow-y-scroll">
+                            <div className="flex flex-col max-xxs:w-[75%] w-[60%] h-[90vh] max-xxs:gap-[1.6rem] gap-[2rem] px-[5%] py-[10%] overflow-y-scroll">
                                 {/* <NavLink
                                     to="/it-infrastructure-solutions"
                                     end
@@ -584,7 +585,7 @@ const NavBarMobile = ({
                                             }}
 
                                             className={({ isActive }) =>
-                                                `max-xxxs:text-[0.7rem] max-xxs:text-[0.75rem] text-[1rem] hover:underline text-text1 ${isActive ? "underline" : ""}`
+                                                `max-xxxs:text-[0.85rem] max-xxs:text-[0.9rem] text-[1.1rem] hover:underline text-text1 ${isActive ? "uppercase" : ""}`
                                             }
                                         >
                                             {item.serviceName}

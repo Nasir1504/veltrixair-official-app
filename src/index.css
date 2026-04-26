@@ -32,6 +32,7 @@
   --color-bg7: #323232;
   --color-bg8: #000310;
   --color-bg9: #375CA5;
+  
 
 
 
@@ -39,6 +40,8 @@
   --color-btn1: #072765;
   --color-btn2: #E36002;
   --color-btn3: #072765;
+  --color-btn4: #000000;
+
 
 
   --color-iconbg1: #dcdcdc;
@@ -57,6 +60,8 @@
   --color-text10: #3D3D3D;
   --color-text11: #C2C2C2;
   --color-text12: #999999;
+  --color-text13: #BBBBBB;
+
 
 
   /* ----Custom Screen Breakpoint----  */

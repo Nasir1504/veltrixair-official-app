@@ -49,6 +49,8 @@ function App() {
   const [direction, setDirection] = useState();
   const [progress, setProgress] = useState();
   const [showLoader, setShowLoader] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+
   // mobile navbar
   const [toggle, setToggle] = useState({
     main: false,
@@ -85,6 +87,18 @@ function App() {
     };
   }, [toggle]);
 
+  // --------------- window resize ---------------
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 655); // md breakpoint
+    };
+
+    handleResize(); // run once
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <HelmetProvider>
@@ -117,8 +131,8 @@ function App() {
 
         {/* ------- Navbar ----------- */}
         <div
-          className={`fixed z-20 top-0 w-full bg-[#ffffff10] rounded-b-[1.2rem] border border-white border-b-1 border-t-0 backdrop-blur-[20px] max-xs:hidden
-           text-white transition-transform duration-500 ${direction === 1 ? "-translate-y-full" : "translate-y-0"} mix-blend-difference`}
+          className={`fixed z-20 top-0 w-full bg-bg1 rounded-b-[1.2rem] border border-white border-b-1 border-t-0 backdrop-blur-[100px] max-xs:hidden
+           text-white transition-transform duration-500 ${direction === 1 ? "-translate-y-full" : "translate-y-0"}`}
         >
           <NavBar
             Direction={direction}
@@ -168,7 +182,7 @@ function App() {
         </div>
         {/* ------------------ */}
         {/* LOADER */}
-        <div
+        {/* <div
           className={`fixed w-full h-screen z-25 top-0 left-0 bg-bg1 flex justify-center items-center
            text-white  `}
           style={{ display: showLoader ? "" : "none" }}
@@ -179,7 +193,7 @@ function App() {
 
           />
 
-        </div>
+        </div> */}
 
 
         <div className="fixed z-20 top-0 left-0 h-[2px] bg-bg2 mix-blend-difference"
@@ -211,7 +225,7 @@ function App() {
             {/* ----------------------------- */}
 
             <Route path="/">
-              <Route index element={<ITSolutionsMain />} />
+              <Route index element={<ITSolutionsMain IsMobile={isMobile} />} />
               <Route path="about" element={<AboutPageITSolution />} />
               <Route path="people" element={<PeoplePageITSolution />} />
               <Route path="services" element={<Services />} />

@@ -16,11 +16,13 @@ import {
 import { Footer } from "../../components";
 import { ScrollTracker } from "../../components";
 
-const ITSolutionsMain = () => {
+const ITSolutionsMain = ({
+    IsMobile
+}) => {
     const location = useLocation();
 
     return (
-        <div className="it-solution-main bg-bg8" key={location.pathname}>
+        <div className="it-solution-main" key={location.pathname}>
             <Helmet>
                 <title>IT Infrastructure Services & Cloud Solutions | Veltrixair.</title>
                 <meta name="description" content="IT infrastructure, cloud, networking, cybersecurity, and managed services for scalable, secure, and high-performance enterprise operations globally." />
@@ -33,7 +35,7 @@ const ITSolutionsMain = () => {
                 <SplineScene />
             </div> */}
             {/* <ITSolutionSMCarousel /> */}
-            <Services />
+            <Services IsMobile={IsMobile} />
             <IndustriesWeServe />
             <BuildInfrastructure />
             <Footer />

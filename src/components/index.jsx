@@ -24,3 +24,4 @@ export { default as CookieConsent } from "./CookieConsent";
 export { default as FloatingBlob } from "./FloatingBlob";
 export { default as StackOfCards } from "./StackOfCards";
 export { default as ScrollReset } from "./ScrollReset";
+export { default as MainServiceCard } from "./MainServiceCard";
