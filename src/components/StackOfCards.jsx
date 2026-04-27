@@ -10,6 +10,7 @@ const StackOfCards = ({
 }) => {
   const containerRef = useRef(null);
   const cardsRef = useRef([]);
+  const activeIndexRef = useRef(0);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const { heading, subHeading, subService } = SolutionWeProvide;
@@ -17,6 +18,15 @@ const StackOfCards = ({
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const cards = cardsRef.current;
+
+      let scrollControll = 1000;
+
+      if (subService.length > 20) {
+        scrollControll = 1500;
+      } else if (subService.length > 10) {
+        scrollControll = 1200;
+      }
+
 
       // Initial state
       cards.forEach((card, i) => {
@@ -32,13 +42,19 @@ const StackOfCards = ({
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top top",
-          end: `+=${subService.length * 1000}`,
-          scrub: true,
+          end: `+=${subService.length * scrollControll}`, // Increased for more control
+          scrub: 0.6, // Slightly reduced lag for better end-of-scroll behavior
           pin: true,
           invalidateOnRefresh: true,
           onUpdate: (self) => {
-            const index = Math.round(self.progress * (subService.length - 1));
-            setActiveIndex(index);
+            const index = Math.min(
+              Math.floor(self.progress * subService.length),
+              subService.length - 1
+            );
+            if (index !== activeIndexRef.current) {
+              activeIndexRef.current = index;
+              setActiveIndex(index);
+            }
           }
         },
       });
@@ -50,7 +66,7 @@ const StackOfCards = ({
         tl.to(card, {
           y: "0%",
           duration: 1,
-          ease: "power2.out",
+          ease: "none", // Linear movement for consistent speed
         });
 
         // Previous card effect
@@ -63,12 +79,16 @@ const StackOfCards = ({
               filter: "blur(2px)",
               opacity: 0.7,
               duration: 1,
-              ease: "power2.out",
+              ease: "none", // Linear movement for consistent speed
             },
             "<"
           );
         }
       });
+
+      // Add a buffer at the end so the last card stays centered for a bit before unpinning
+      tl.to({}, { duration: 1 });
+
     }, containerRef);
 
     return () => ctx.revert();
@@ -113,4 +133,4 @@ const StackOfCards = ({
   );
 };
 
-export default StackOfCards;
+export default StackOfCards;

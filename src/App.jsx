@@ -182,7 +182,7 @@ function App() {
         </div>
         {/* ------------------ */}
         {/* LOADER */}
-        {/* <div
+        <div
           className={`fixed w-full h-screen z-25 top-0 left-0 bg-bg1 flex justify-center items-center
            text-white  `}
           style={{ display: showLoader ? "" : "none" }}
@@ -193,7 +193,7 @@ function App() {
 
           />
 
-        </div> */}
+        </div>
 
 
         <div className="fixed z-20 top-0 left-0 h-[2px] bg-bg2 mix-blend-difference"

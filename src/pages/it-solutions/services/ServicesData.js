@@ -1,3 +1,12 @@
+import {
+    subServiceImage1,
+    subServiceImage2,
+    subServiceImage3,
+    subServiceImage4,
+    subServiceImage5
+} from "../../../assets/imgs/it-solutions"
+
+
 
 export const SERVICES_DATA = [
     // 1 ------------------------
@@ -13,6 +22,7 @@ export const SERVICES_DATA = [
             subService: [
                 {
                     name: "Enterprise Web Apps Development",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "ERP Tool" },
                         { name: "CRM Tool" },
@@ -24,6 +34,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Android & iOS Apps",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Native Apps Development" },
                         { name: "Custom App Development" },
@@ -34,6 +45,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Pitch-Deck Design & Development",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Coming soon" },
                         { name: "Coming soon" },
@@ -45,6 +57,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "AI & Smart Solution",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "AI Chatbots & Virtual Assistance" },
                         { name: "Predictive Analutics Tool" },
@@ -54,6 +67,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "UI/UX Design",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Mobile UI/UX design" },
                         { name: "Web UI/UX design" },
@@ -83,6 +97,7 @@ export const SERVICES_DATA = [
             subService: [
                 {
                     name: "LAN / WAN / Wi-Fi",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Office networking" },
                         { name: "Wireless coverage" },
@@ -94,6 +109,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Firewall & Router Setup",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Router installation" },
                         { name: "Firewall policies" },
@@ -105,6 +121,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "VLAN & IP Planning",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "VLAN setup" },
                         { name: "IP planning" },
@@ -116,6 +133,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "SD-WAN Deployment",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Multi-site networks" },
                         { name: "Remote access" },
@@ -126,6 +144,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Monitoring & Bandwidth",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Usage tracking" },
                         { name: "Performance monitoring" },
@@ -139,6 +158,7 @@ export const SERVICES_DATA = [
                 // ----------------------
                 {
                     name: "CCTV Design & Installation",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Camera placement" },
                         { name: "DVR setup" },
@@ -149,6 +169,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Network Security",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Access control" },
                         { name: "Firewall support" },
@@ -160,6 +181,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Structured Cabling",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Cable layout" },
                         { name: "Rack setup" },
@@ -171,6 +193,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Fibre Optic Cabling",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Fibre installation" },
                         { name: "Backbone cabling" },
@@ -181,6 +204,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Maintenance & Support",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Preventive maintenance" },
                         { name: "Troubleshooting" },
@@ -195,6 +219,7 @@ export const SERVICES_DATA = [
                 // ----------------------
                 {
                     name: "Data Centre Architecture",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Server room planning" },
                         { name: "Rack layouts" },
@@ -206,6 +231,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Hybrid Cloud Design",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "AWS architecture" },
                         { name: "Azure setup" },
@@ -217,6 +243,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Network Topology Design",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Branch connectivity" },
                         { name: "Secure routing" },
@@ -228,6 +255,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Disaster Recovery Planning",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Backup strategy" },
                         { name: "Failover design" },
@@ -239,6 +267,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Scalability & Performance",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Future growth" },
                         { name: "System tuning" },
@@ -252,6 +281,7 @@ export const SERVICES_DATA = [
                 // ----------------------
                 {
                     name: "Server Room Setup",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Rack installation" },
                         { name: "Cable layout" },
@@ -263,6 +293,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Power & Cooling",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "UPS systems" },
                         { name: "Cooling units" },
@@ -273,6 +304,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Rack & Cabling",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Rack setup" },
                         { name: "Structured cabling" },
@@ -284,6 +316,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Monitoring Systems",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Environmental alerts" },
                         { name: "Power monitoring" },
@@ -295,6 +328,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Redundancy & Failover",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Backup systems" },
                         { name: "Failover planning" },
@@ -308,6 +342,7 @@ export const SERVICES_DATA = [
                 // ----------------------
                 {
                     name: "Server Provisioning",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Physical servers" },
                         { name: "Virtual servers" },
@@ -319,6 +354,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "VMware & Hyper-V",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Hypervisor setup" },
                         { name: "Virtual machines" },
@@ -330,6 +366,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Patch Management",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "OS updates" },
                         { name: "Security patches" },
@@ -341,6 +378,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "DNS & DHCP Services",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Domain services" },
                         { name: "IP allocation" },
@@ -372,6 +410,7 @@ export const SERVICES_DATA = [
             subService: [
                 {
                     name: "SAN / NAS / DAS",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Shared storage" },
                         { name: "High-speed access" },
@@ -383,6 +422,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Cloud Storage Integration",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "S3 storage" },
                         { name: "Azure Blob" },
@@ -394,6 +434,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Backup Systems",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Automated backups" },
                         { name: "Recovery points" },
@@ -405,6 +446,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Storage Virtualisation",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Tiered storage" },
                         { name: "Flexible capacity" },
@@ -418,6 +460,7 @@ export const SERVICES_DATA = [
                 // ----------------------
                 {
                     name: "Cloud Consulting",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Readiness assessment" },
                         { name: "Adoption strategy" },
@@ -429,6 +472,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Cloud Infrastructure Setup",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Virtual machines" },
                         { name: "Storage setup" },
@@ -440,6 +484,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Cloud Migration",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Server migration" },
                         { name: "Application migration" },
@@ -451,6 +496,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "DevOps & Automation",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "CI/CD pipelines" },
                         { name: "Terraform setup" },
@@ -462,6 +508,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Cloud Security",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Access control" },
                         { name: "Data encryption" },
@@ -475,6 +522,7 @@ export const SERVICES_DATA = [
                 // ----------------------
                 {
                     name: "DR Planning",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Recovery strategy" },
                         { name: "Risk analysis" },
@@ -485,7 +533,7 @@ export const SERVICES_DATA = [
                     ]
                 },
                 {
-                    name: "Automated Backups",
+                    name: "Automated Backups", imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Scheduled backups" },
                         { name: "Cloud backups" },
@@ -496,7 +544,7 @@ export const SERVICES_DATA = [
                     ]
                 },
                 {
-                    name: "Failover Testing",
+                    name: "Failover Testing", imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "DR drills" },
                         { name: "Recovery testing" },
@@ -507,14 +555,13 @@ export const SERVICES_DATA = [
                     ]
                 },
                 {
-                    name: "Offsite Backup",
+                    name: "Offsite Backup", imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Cloud storage" },
                         { name: "Remote recovery" },
                         { name: "Secure replication" },
                         { name: "Backup monitoring" },
                         { name: "Data protection" },
-
                     ]
                 }
 
@@ -539,6 +586,7 @@ export const SERVICES_DATA = [
             subService: [
                 {
                     name: "Firewall Security",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Fortinet setup" },
                         { name: "Sophos firewall" },
@@ -550,6 +598,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Endpoint Security",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Antivirus setup" },
                         { name: "EDR deployment" },
@@ -561,6 +610,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "IPS / IDS Systems",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Intrusion detection" },
                         { name: "Intrusion prevention" },
@@ -572,6 +622,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "SIEM Monitoring",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Log analysis" },
                         { name: "Event tracking" },
@@ -583,6 +634,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Email & Web Security",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Spam filtering" },
                         { name: "Phishing protection" },
@@ -596,6 +648,7 @@ export const SERVICES_DATA = [
                 // ----------------------
                 {
                     name: "Infrastructure Monitoring",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "System tracking" },
                         { name: "Resource monitoring" },
@@ -606,6 +659,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Server Monitoring",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "CPU monitoring" },
                         { name: "Memory usage" },
@@ -616,6 +670,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Network Monitoring",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Traffic analysis" },
                         { name: "Bandwidth tracking" },
@@ -626,6 +681,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Log Management",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Log aggregation" },
                         { name: "Error tracking" },
@@ -636,6 +692,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Alerts & Dashboards",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Real-time alerts" },
                         { name: "Grafana dashboards" },
@@ -666,6 +723,7 @@ export const SERVICES_DATA = [
             subService: [
                 {
                     name: "Dedicated Internet Access",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Business-grade internet" },
                         { name: "SLA-backed uptime" },
@@ -676,6 +734,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Point-to-Point Links",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Site connectivity" },
                         { name: "Data transfer" },
@@ -686,6 +745,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Satellite Internet",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Remote sites" },
                         { name: "Offshore locations" },
@@ -699,6 +759,7 @@ export const SERVICES_DATA = [
                 // ----------------------
                 {
                     name: "L1 / L2 / L3 Support",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Technical support" },
                         { name: "Escalation handling" },
@@ -710,6 +771,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Remote Helpdesk",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Ticket management" },
                         { name: "Remote access" },
@@ -721,6 +783,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Onsite Support",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Engineer visits" },
                         { name: "Hardware support" },
@@ -732,6 +795,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "AMC Services",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Comprehensive AMC" },
                         { name: "Remote AMC" },
@@ -745,6 +809,7 @@ export const SERVICES_DATA = [
                 // ----------------------
                 {
                     name: "Microsoft 365 Email",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Outlook setup" },
                         { name: "Email migration" },
@@ -756,6 +821,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Google Workspace",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Gmail for business" },
                         { name: "Team collaboration" },
@@ -767,6 +833,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Domain Registration",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Domain setup" },
                         { name: "DNS management" },
@@ -778,6 +845,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Email Migration",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Old provider migration" },
                         { name: "Data transfer" },
@@ -809,6 +877,7 @@ export const SERVICES_DATA = [
             subService: [
                 {
                     name: "CI/CD Pipelines",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Automated builds" },
                         { name: "Faster releases" },
@@ -820,6 +889,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Terraform & IaC",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Infrastructure as code" },
                         { name: "Cloud automation" },
@@ -831,6 +901,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Jenkins & GitOps",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Build pipelines" },
                         { name: "Release automation" },
@@ -842,6 +913,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Configuration Management",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Ansible setup" },
                         { name: "Environment control" },
@@ -855,6 +927,7 @@ export const SERVICES_DATA = [
                 // ----------------------
                 {
                     name: "Docker Services",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Container creation" },
                         { name: "Docker images" },
@@ -866,6 +939,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Kubernetes Deployment",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Cluster setup" },
                         { name: "Node scaling" },
@@ -877,6 +951,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Microservices Architecture",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Modular systems" },
                         { name: "API communication" },
@@ -888,6 +963,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Deployment Automation",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "CI/CD integration" },
                         { name: "Release automation" },
@@ -919,6 +995,7 @@ export const SERVICES_DATA = [
             subService: [
                 {
                     name: "SEO Services",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "Keyword research" },
                         { name: "Technical SEO" },
@@ -930,6 +1007,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "SEM Campaigns",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Paid search" },
                         { name: "PPC campaigns" },
@@ -941,6 +1019,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Social Media Marketing",
+                    imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Content strategy" },
                         { name: "Campaign management" },
@@ -952,6 +1031,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "Content Marketing",
+                    imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Website content" },
                         { name: "Blog writing" },
@@ -963,6 +1043,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "CRM & Email Marketing",
+                    imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Lead nurturing" },
                         { name: "CRM workflows" },
@@ -993,6 +1074,7 @@ export const SERVICES_DATA = [
             subService: [
                 {
                     name: "ERP Implementation",
+                    imgURL: subServiceImage4,
                     subSubServiceList: [
                         { name: "ERP deployment" },
                         { name: "System integration" },
@@ -1004,6 +1086,7 @@ export const SERVICES_DATA = [
                 },
                 {
                     name: "HRMS & Payroll",
+                    imgURL: subServiceImage5,
                     subSubServiceList: [
                         { name: "Attendance tracking" },
                         { name: "Payroll management" },
@@ -1014,7 +1097,7 @@ export const SERVICES_DATA = [
                     ]
                 },
                 {
-                    name: "Finance & Procurement",
+                    name: "Finance & Procurement", imgURL: subServiceImage1,
                     subSubServiceList: [
                         { name: "Budget tracking" },
                         { name: "Vendor management" },
@@ -1025,7 +1108,7 @@ export const SERVICES_DATA = [
                     ]
                 },
                 {
-                    name: "Inventory & Assets",
+                    name: "Inventory & Assets", imgURL: subServiceImage2,
                     subSubServiceList: [
                         { name: "Inventory tracking" },
                         { name: "Asset monitoring" },
@@ -1036,7 +1119,7 @@ export const SERVICES_DATA = [
                     ]
                 },
                 {
-                    name: "Project Management",
+                    name: "Project Management", imgURL: subServiceImage3,
                     subSubServiceList: [
                         { name: "Resource planning" },
                         { name: "Task tracking" },
@@ -1054,5 +1137,4 @@ export const SERVICES_DATA = [
 
     },
 
-
-]
+]                  
