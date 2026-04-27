@@ -1,5 +1,8 @@
 import { useState, useMemo } from "react";
-import { Shutter } from "../../../assets/imgs/it-solutions";
+import {
+    Shutter,
+    ShutterVertical
+} from "../../../assets/imgs/it-solutions";
 
 const ShutterContent = ({
     Trigger,
@@ -14,7 +17,7 @@ const ShutterContent = ({
         if (Trigger) {
             handler = setTimeout(() => {
                 setHideShutter(true);
-            }, 1000);
+            }, 800);
         }
 
         return () => clearTimeout(handler);
@@ -38,7 +41,7 @@ const ShutterContent = ({
                 '>
                     <span className="font-[Poppins] font-medium">{Heading1}</span><br />
                     <span
-                        className='uppercase font-light max-xs:text-[3rem] max-xxs:text-[2.5rem]'
+                        className='uppercase font-light max-xs:text-[2.6rem] max-xxs:text-[2rem]'
                     >{Heading2}</span>
                 </h3>
 
@@ -97,7 +100,7 @@ const ShutterContent = ({
                 >
                     <img
                         alt="shutter"
-                        src={Shutter}
+                        src={ShutterVertical}
                         className="h-full w-full"
                         style={{ objectFit: "cover" }}
                     />
@@ -111,7 +114,7 @@ const ShutterContent = ({
 
                 <div
                     className='relative w-[50%] h-full bg-no-repeat bg-[linear-gradient(90deg,rgba(30,29,29,0.1)0%,rgba(56,56,56,0.1)_71%)]
-                              duration-1000 ease-in-out max-xs:hidden'
+                              duration-800 ease-in-out max-xs:hidden'
 
                     style={{
                         clipPath: Trigger ? "rect(0% 100% 100% 100%)" : "rect(0% 100% 100% 0%)"
@@ -131,7 +134,7 @@ const ShutterContent = ({
                 {/* mobile */}
                 <div
                     className='relative w-full h-[50%] bg-no-repeat bg-[linear-gradient(90deg,rgba(30,29,29,0.1)0%,rgba(56,56,56,0.1)_71%)]
-                              duration-1000 ease-in-out xs:hidden'
+                              duration-800 ease-in-out xs:hidden'
 
                     style={{
                         clipPath: Trigger ? "rect(100% 100% 100% 0%)" : "rect(0% 100% 100% 0%)"
@@ -140,7 +143,7 @@ const ShutterContent = ({
                 >
                     <img
                         alt="shutter"
-                        src={Shutter}
+                        src={ShutterVertical}
                         className="h-full w-full"
                         style={{ objectFit: "cover" }}
                     />

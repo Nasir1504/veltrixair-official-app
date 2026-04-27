@@ -396,8 +396,8 @@ const Services = ({
 
                                             style={{
                                                 transform:
-                                                    i === 0 ? `rotate(-${clamp(0, 18, (18 - ((total - 1.1) * 60)))}deg) translate3d(${clamp(0, 15, (15 - ((total - 1.1) * 100)))}vw, -${clamp(0, 120, (120 - ((total - 1.1) * 410)))}vh,-${clamp(0, 45, (45 - ((total - 1.1) * 155)))}rem)` :
-                                                        i === 1 ? `rotate(${clamp(0, 20, (20 - ((total - 1.1) * 70)))}deg) translate3d(-${clamp(0, 70, (70 - ((total - 1.1) * 420)))}vw,-${clamp(0, 195, (195 - ((total - 1.1) * 645)))}vh,-${clamp(0, 45, (45 - ((total - 1.1) * 155)))}rem)` :
+                                                    i === 0 ? `rotate(-${clamp(0, 18, (18 - ((total - 1.1) * 60)))}deg) translate3d(${clamp(0, 15, (15 - ((total - 1.1) * 100)))}vw, -${clamp(0, 120, (120 - ((total - 1.1) * 400)))}vh,-${clamp(0, 45, (45 - ((total - 1.1) * 155)))}rem)` :
+                                                        i === 1 ? `rotate(${clamp(0, 20, (20 - ((total - 1.1) * 70)))}deg) translate3d(-${clamp(0, 70, (70 - ((total - 1.1) * 260)))}vw, -${clamp(0, 195, (195 - ((total - 1.1) * 650)))}vh,-${clamp(0, 45, (45 - ((total - 1.1) * 150)))}rem)` :
                                                             i === 2 ? `rotate(-${clamp(0, 18, (18 - ((total - 1.1) * 60)))}deg) translate3d(0vw,-${clamp(0, 92, (92 - ((total - 1.1) * 310)))}vh,-${clamp(0, 45, (45 - ((total - 1.1) * 150)))}rem)` :
                                                                 i === 3 && `rotate(${clamp(0, 20, (20 - ((total - 1.1) * 66)))}deg) translate3d(-${clamp(0, 35, (35 - ((total - 1.1) * 145)))}vw,-${clamp(0, 160, (160 - ((total - 1.1) * 542)))}vh,-${clamp(0, 65, (65 - ((total - 1.1) * 215)))}rem)`
 

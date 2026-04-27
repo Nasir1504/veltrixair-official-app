@@ -55,6 +55,7 @@ import AboutCard5 from "./about-card5.png";
 import AboutCard6 from "./about-card6.png";
 
 import Shutter from "./shutter.png";
+import ShutterVertical from "./shutter-vertical.png";
 
 import VisionVideo from "./vision-video.mp4";
 import ServiceCardVideo from "./service-card-video.mp4";
@@ -64,7 +65,11 @@ import Icon2 from "./secure-and-scalable.png";
 import Icon3 from "./structured-delivery.png";
 import Icon4 from "./Long-term-support.png";
 
-
+import subServiceImage1 from "./sub-service-card1.png"
+import subServiceImage2 from "./sub-service-card2.png"
+import subServiceImage3 from "./sub-service-card3.png"
+import subServiceImage4 from "./sub-service-card4.png"
+import subServiceImage5 from "./sub-service-card5.png"
 
 
 export {
@@ -127,9 +132,16 @@ export {
     ServiceCardVideo,
 
     Shutter,
+    ShutterVertical,
 
     Icon1,
     Icon2,
     Icon3,
     Icon4,
+
+    subServiceImage1,
+    subServiceImage2,
+    subServiceImage3,
+    subServiceImage4,
+    subServiceImage5,
 }

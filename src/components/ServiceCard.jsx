@@ -1,14 +1,14 @@
 import React, { memo } from "react";
-import VideoComponent from "./VideoComponent";
-import { ServiceCardVideo } from "../assets/imgs/it-solutions";
-import { DigitalSystem } from "../assets/imgs/home";
+// import VideoComponent from "./VideoComponent";
+// import { ServiceCardVideo } from "../assets/imgs/it-solutions";
+// import { DigitalSystem } from "../assets/imgs/home";
 
 const ServiceCard = memo(({ item, i, isNear }) => {
   return (
     <div className="relative w-[60%] h-[45%] max-xxs:h-[60%] max-xs:h-[60%] max-xs:w-[60%] max-xxs:w-[75%]
                     bg-[linear-gradient(90deg,rgba(55,92,165,1)_0%,rgba(0,0,0,0)_100%)] flex items-center justify-center text-3xl font-bold shadow-2xl p-0.5 
                     max-xxs:rounded-[0.7rem] max-xs:rounded-[0.9rem] rounded-[1.2rem] md:rounded-[1.2rem] mdlg:rounded-[1.5rem] lg:rounded-[1.8rem] xl:rounded-[2rem]">
-      
+
       <p className="absolute text-text1 right-8 top-5 font-light
                     max-xs:text-[0.85rem] text-[0.65rem] md:text-[0.65rem] mdlg:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem]">
         {String(i + 1).padStart(3, '0')}
@@ -23,11 +23,11 @@ const ServiceCard = memo(({ item, i, isNear }) => {
             <div className="w-full h-full flex justify-center items-center">
               {/* Only render video if the card is near the active viewport */}
               {isNear ? (
-                <VideoComponent
-                  src={ServiceCardVideo}
-                  poster={DigitalSystem}
+
+                <img
                   className="h-full w-full relative z-0"
-                  isMuteIcon={false}
+                  src={item.imgURL}
+                  alt=""
                 />
               ) : (
                 <div className="w-full h-full bg-black/20" />
@@ -51,7 +51,7 @@ const ServiceCard = memo(({ item, i, isNear }) => {
       {/* Right Section: Content */}
       <div className="w-full h-full flex max-xs:flex-col justify-end items-center bg-[#0d0d0d] overflow-hidden
                       max-xxs:rounded-[0.65rem] max-xs:rounded-[0.9rem] rounded-[1.2rem] md:rounded-[1.2rem] mdlg:rounded-[1.5rem] lg:rounded-[1.8rem] xl:rounded-[2rem]">
-        
+
         {/* Mobile Header */}
         <div className="w-full max-xxs:h-[18%] h-[23%] pl-[3%] flex justify-center items-center xs:hidden">
           <div className="w-[35%] h-full rounded-[0.6rem] p-1 bg-[linear-gradient(220deg,rgba(55,92,165,1)_0%,rgba(0,0,0,0)_60%)]">
@@ -59,11 +59,10 @@ const ServiceCard = memo(({ item, i, isNear }) => {
                             max-xs:rounded-[0.5rem]">
               <div className="w-full h-full flex justify-center items-center">
                 {isNear ? (
-                  <VideoComponent
-                    src={ServiceCardVideo}
-                    poster={DigitalSystem}
+                  <img
                     className="h-full w-full relative z-0"
-                    isMuteIcon={false}
+                    src={item.imgURL}
+                    alt=""
                   />
                 ) : (
                   <div className="w-full h-full bg-black/20" />
