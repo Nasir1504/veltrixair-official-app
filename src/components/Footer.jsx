@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import Logo from "../assets/imgs/footer/veltrixair-logo-type-one.png";
 
 const Footer = () => {
@@ -14,19 +15,23 @@ const Footer = () => {
         },
         {
             name: "industries",
-            linkTo: "/industries",
+            linkTo: "/",
         },
         {
             name: "portfolio",
-            linkTo: "portfolio",
+            linkTo: "/",
         },
+        // {
+        //     name: "careers",
+        //     linkTo: "/",
+        // },
         {
-            name: "careers",
-            linkTo: "/careers",
+            name: "people",
+            linkTo: "/people",
         },
         {
             name: "contact us",
-            linkTo: "contact-us",
+            linkTo: "/",
         },
     ]
 
@@ -110,7 +115,9 @@ const Footer = () => {
                     </div>
                     <div className="max-xs:w-[100%] w-[80%] md:w-[80%] h-[45%] flex justify-between items-center">
                         {/* ------------- Quick Links ------------------ */}
-                        <div className="max-xs:w-[20%] w-[30%] sm:w-[30%] h-full flex flex-col gap-0.5 max-xs:text-[2.2vw] text-[0.54rem] md:text-[0.54rem] mdlg:text-[0.66rem] lg:text-[0.76rem] xl:text-[0.95rem]">
+                        {/* <div className="max-xs:w-[20%] w-[30%] sm:w-[30%] h-full flex flex-col gap-0.5 max-xs:text-[2.2vw] text-[0.54rem] md:text-[0.54rem] mdlg:text-[0.66rem] lg:text-[0.76rem] xl:text-[0.95rem]"> */}
+                        <div className="max-xs:w-[40%] w-[50%] sm:w-[50%] h-full flex flex-col gap-0.5 max-xs:text-[2.2vw] text-[0.54rem] md:text-[0.54rem] mdlg:text-[0.66rem] lg:text-[0.76rem] xl:text-[0.95rem]">
+
                             <h3
                                 className="uppercase text-text1 flex items-center max-xs:gap-1 max-xs:mb-2 gap-1 mb-1 md:gap-1 md:mb-1 lg:gap-2 lg:mb-2"
                             >
@@ -123,9 +130,11 @@ const Footer = () => {
                             {
                                 QuickLinks.map((item, i) => {
                                     return (
-                                        <div key={i} className="text-text1 opacity-80 hover:opacity-100 cursor-pointer capitalize">
+                                        <Link
+                                            to={item.linkTo}
+                                            key={i} className="text-text1 opacity-80 hover:opacity-100 cursor-pointer capitalize">
                                             {item.name}
-                                        </div>
+                                        </Link>
                                     )
                                 })
                             }
@@ -133,7 +142,9 @@ const Footer = () => {
                         </div>
 
                         {/* -------------- IT Solutions ------------------ */}
-                        <div className="max-xs:w-[34%] w-[32%] sm:w-[32%] h-full flex flex-col gap-0.5 max-xs:text-[2vw] text-[0.54rem] md:text-[0.54rem] mdlg:text-[0.66rem] lg:text-[0.76rem] xl:text-[0.95rem]">
+                        {/* <div className="max-xs:w-[34%] w-[32%] sm:w-[32%] h-full flex flex-col gap-0.5 max-xs:text-[2vw] text-[0.54rem] md:text-[0.54rem] mdlg:text-[0.66rem] lg:text-[0.76rem] xl:text-[0.95rem]"> */}
+                        <div className="max-xs:w-[60%] w-[50%] sm:w-[50%] h-full flex flex-col gap-0.5 max-xs:text-[2vw] text-[0.54rem] md:text-[0.54rem] mdlg:text-[0.66rem] lg:text-[0.76rem] xl:text-[0.95rem]">
+
                             <h3
                                 className="uppercase text-text1 flex items-center max-xs:gap-1 max-xs:mb-2 gap-1 mb-1 md:gap-1 md:mb-1 lg:gap-2 lg:mb-2"
                             >
@@ -156,7 +167,7 @@ const Footer = () => {
                         </div>
 
                         {/* -------------- Construction Solution -------------------- */}
-                        <div className="w-[38%] h-full flex flex-col gap-0.5 max-xs:text-[2vw] text-[0.54rem] md:text-[0.54rem] lg:text-[0.76rem] mdlg:text-[0.66rem] xl:text-[0.95rem]">
+                        {/* <div className="w-[38%] h-full flex flex-col gap-0.5 max-xs:text-[2vw] text-[0.54rem] md:text-[0.54rem] lg:text-[0.76rem] mdlg:text-[0.66rem] xl:text-[0.95rem]">
                             <h3
                                 className="uppercase text-text1 flex items-center max-xs:gap-1 max-xs:mb-2 gap-1 mb-1 md:gap-1 md:mb-1 lg:gap-2 lg:mb-2"
                             >
@@ -175,10 +186,12 @@ const Footer = () => {
                                     )
                                 })
                             }
-                        </div>
+                        </div> */}
 
                     </div>
+                    {/* <div className="w-full max-xs:h-[35%] h-[25%] sm:h-[25%] flex max-xs:flex-col max-xs:gap-[10%] max-xs:text-[1.6vw] text-[0.54rem] md:text-[0.54rem] mdlg:text-[0.66rem] lg:text-[0.76rem] xl:text-[0.95rem]"> */}
                     <div className="w-full max-xs:h-[35%] h-[25%] sm:h-[25%] flex max-xs:flex-col max-xs:gap-[10%] max-xs:text-[1.6vw] text-[0.54rem] md:text-[0.54rem] mdlg:text-[0.66rem] lg:text-[0.76rem] xl:text-[0.95rem]">
+
                         <div className="max-xs:w-[65%] w-[50%] sm:w-[50%]">
                             <h3
                                 className="uppercase text-text1 flex items-center max-xs:gap-1 max-xs:mb-2 gap-1 mb-1 md:gap-1 md:mb-1 lg:gap-2 lg:mb-2"
@@ -204,7 +217,7 @@ const Footer = () => {
                         </div>
                         <div className="flex justify-center items-center max-xs:w-[65%] w-[50%] sm:w-[50%] h-full">
                             <p className="text-text1">
-                                © 2026 [Company Name]. All Rights Reserved. <br /> Privacy Policy | Terms & Conditions | Cookies Policy
+                                © 2026 Veltrixair. All Rights Reserved. <br /> Privacy Policy | Terms & Conditions | Cookies Policy
                             </p>
                         </div>
 

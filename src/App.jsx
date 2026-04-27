@@ -213,14 +213,14 @@ function App() {
 
             {/* ------------------------------------------- */}
 
-            {/* <Route path="/construction-services-saudi-arabia">
+            <Route path="/construction-services-saudi-arabia">
               <Route index element={<ConstructionPage />} />
               <Route path="fit-out-precision" element={<FitOutConstructionPage />} />
               <Route path="overhead-crane-installation" element={<OverheadCrameInstallationPage />} />
               <Route path="building-materials-supply" element={<BuildingMaterialsSupplyPage />} />
               <Route path="about" element={<AboutUsConstruction />} />
               <Route path="people" element={<PeopleConstruction />} />
-            </Route> */}
+            </Route>
 
             {/* ----------------------------- */}
 
