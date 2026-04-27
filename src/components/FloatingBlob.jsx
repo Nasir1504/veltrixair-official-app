@@ -13,27 +13,33 @@ export default function FloatingBlob({
       smooth: true,
     });
 
+    let rafId;
     function raf(time) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
     // 🔹 GSAP random floating animation
-    const moveBlob = () => {
-      gsap.to(blobRef.current, {
-        x: gsap.utils.random(-100, 100),
-        y: gsap.utils.random(-5, 5),
-        duration: gsap.utils.random(2, 4),
-        ease: "sine.inOut",
-        onComplete: moveBlob, // loop infinitely
-      });
-    };
+    let ctx = gsap.context(() => {
+      const moveBlob = () => {
+        if (!blobRef.current) return;
+        gsap.to(blobRef.current, {
+          x: gsap.utils.random(-100, 100),
+          y: gsap.utils.random(-5, 5),
+          duration: gsap.utils.random(2, 4),
+          ease: "sine.inOut",
+          onComplete: moveBlob, // loop infinitely
+        });
+      };
 
-    moveBlob();
+      moveBlob();
+    });
 
     return () => {
       lenis.destroy();
+      cancelAnimationFrame(rafId);
+      ctx.revert();
     };
   }, []);
 

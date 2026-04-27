@@ -109,15 +109,23 @@ const StackOfCards = ({
       <div className="h-screen w-full overflow-hidden flex items-center justify-center">
         <div className="relative w-full h-full">
           {subService.map((item, i) => {
-            // Only render full content for cards near the active index
-            const isNear = Math.abs(activeIndex - i) <= 1;
+            // Optimization: Only display cards within a certain range of the active index
+            // This prevents the browser from crashing due to too many active layers on mobile.
+            // Cards behind (activeIndex - 10) are hidden, and cards ahead (activeIndex + 5) are hidden.
+            const isVisible = i >= activeIndex - 10 && i <= activeIndex + 5;
+
+            // Only render full content (like images) for cards near the active index
+            const isNear = Math.abs(activeIndex - i) <= 2;
             
             return (
               <div
                 key={i}
                 ref={(el) => (cardsRef.current[i] = el)}
                 className="absolute max-xxs:mt-[23%] max-xs:mt-[17%] mt-[6%] mdlg:mt-[6%] lg:mt-[8%] xl:mt-[7%] top-0 left-0 w-full h-full flex items-center justify-center will-change-transform"
-                style={{ zIndex: subService.length - i }}
+                style={{ 
+                  zIndex: subService.length - i,
+                  display: isVisible ? "flex" : "none"
+                }}
               >
                 <ServiceCard 
                   item={item} 
