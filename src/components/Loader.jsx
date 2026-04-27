@@ -43,28 +43,33 @@ const Loader = ({
 
     // GSAP animation
     useEffect(() => {
-        cardsRef.current.forEach((card, i) => {
-            gsap.to(card, {
-                opacity: cardNum === i ? 1 : 0,
-                // scale: cardNum === i ? 1 : 0.9,
-                y: cardNum === i ? 0 : 20,
-                duration: 0.6,
-                ease: "power2.out",
+        let ctx = gsap.context(() => {
+            cardsRef.current.forEach((card, i) => {
+                if (!card) return;
+                gsap.to(card, {
+                    opacity: cardNum === i ? 1 : 0,
+                    y: cardNum === i ? 0 : 20,
+                    duration: 0.6,
+                    ease: "power2.out",
+                });
             });
         });
+        return () => ctx.revert();
     }, [cardNum]);
 
     useEffect(() => {
         const obj = { value: 0 };
-
-        gsap.to(obj, {
-            value: 100,
-            duration: 3,
-            ease: "sine.out",
-            onUpdate: () => {
-                setProgress(Math.floor(obj.value));
-            },
+        let ctx = gsap.context(() => {
+            gsap.to(obj, {
+                value: 100,
+                duration: 3,
+                ease: "sine.out",
+                onUpdate: () => {
+                    setProgress(Math.floor(obj.value));
+                },
+            });
         });
+        return () => ctx.revert();
     }, []);
 
     // loader
